@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://localhost/DE_CIM_Model/abb.eam.asset.transportation.bus-engine.json#",
+  "title": "Bus Engine Model",
+  "model-metadata": {
+    "model-version": "1.0.0",
+    "model-name": "abb.eam.asset.transportation.bus-engine.json"
+  },
+
+  "$comment": "A specific model definition for a bus engine",
+
+  "allOf": [
+    { "$ref": "abb.eam.asset.json" },
+    { "properties": {
+        "fuelType": {
+          "type": "string",
+          "enum": [ "Petrol", "Diesel", "Electric" ]
+        }
+      }
+    }
+  ]
+}

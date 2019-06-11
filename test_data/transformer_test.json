@@ -1,0 +1,75 @@
+{
+  "model-metadata": {
+		"model-version": "1.0.0",
+		"model-name": "abb.eam.asset.utilities.transformer.json"
+  },
+  "assetId": "TX12763571265",
+  "assetDescription": "Power Transformer in Big Substation",
+  "assetStatus": "Installed",
+  "txtype": "Power Transformer",
+  "manufacturer": "Cowboy Inc",
+  "secondaryAttributes": [
+    {
+      "name": "admsId",
+      "value": "TX-P-3247",
+      "category": "ADMS",
+      "dataType": "admsId"
+    },
+    {
+      "name": "gisId",
+      "value": "TX-3478564378",
+      "dataType": "gisId"
+    }
+  ],
+  "workOrders": [
+    {
+      "model-metadata": {
+        "model-version": "1.0.0",
+        "model-name": "abb.eam.workorder.json"
+      },
+      "workOrderId": "WO283745636485",
+      "workDescription": "Inspect the transformer's gas",
+      "startDate": "12/05/19",
+      "workOrderStatus": "Complete",
+      "assetId": "TX12763571265",
+      "secondaryAttributes": [
+        {
+          "name": "warning",
+          "value": "Beware of the dog",
+          "category": "WFM",
+          "dataType": "string"
+        }
+      ]
+    },
+    {
+      "model-metadata": {
+        "model-version": "1.0.0",
+        "model-name": "abb.eam.workorder.json"
+      },
+      "workOrderId": "WO283745636485",
+      "workDescription": "Fix the transformer",
+      "startDate": "14/05/19",
+      "workOrderStatus": "Complete",
+      "assetId": "TX12763571265",
+      "secondaryAttributes": [
+        {
+          "name": "warning",
+          "value": "Beware of the dog",
+          "category": "WFM",
+          "dataType": "string"
+        }
+      ]
+    }
+  ],
+  "location": {
+    "model-metadata": {
+  		"model-version": "1.0.0",
+  		"model-name": "abb.eam.asset.json"
+    },
+    "locationId": "L2378462378",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [ 34.23, -57.56 ]
+    }
+  }
+}

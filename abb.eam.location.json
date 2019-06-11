@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://localhost/DE_CIM_Model/abb.eam.location.json#",
+  "title": "Location Model",
+  "model-metadata": {
+    "model-version": "1.0.0",
+    "model-name": "abb.eam.location.json"
+  },
+
+  "$comment": "The model definition for point locations in the EAM space. Modelled after GeoJSON Point geometry.",
+
+  "type": "object",
+  "properties": {
+    "locationId": {
+      "type": "string"
+    },
+    "geometry": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "Point"
+          ],
+          "default": "Point"
+        },
+        "coordinates": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      }
+    }
+  },
+  "required": [
+    "locationId", "geometry"
+  ]
+}

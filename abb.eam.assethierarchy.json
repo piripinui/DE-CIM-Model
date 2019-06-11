@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://localhost/DE_CIM_Model/abb.eam.assethierachy.json#",
+  "title": "Asset Hierarchy Model",
+  "model-metadata": {
+    "model-version": "1.0.0",
+    "model-name": "abb.eam.assethierarchy.json"
+  },
+
+  "$comment": "This is a definition of a generic asset hierarchy that can be used for anything",
+
+  "type": "object",
+  "properties": {
+    "root": {
+      "$ref": "abb.eam.asset.json"
+    },
+    "subassets": {
+      "type": "array",
+      "items": { "$ref": "abb.eam.asset.json" },
+      "default": []
+    },
+    "subcomponents": {
+      "type": "array",
+      "items": { "$ref": "abb.eam.component.json" },
+      "default": []
+    },
+    "features": {
+      "type": "array",
+      "items": { "$ref": "abb.eam.feature.json" },
+      "default": []
+    }
+  },
+  "requires": [
+    "root", "subassets", "subcomponents", "features"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://localhost/DE_CIM_Model/abb.eam.asset.utilities.transformer.json#",
+  "title": "Transformer Model",
+  "model-metadata": {
+    "model-version": "1.0.0",
+    "model-name": "abb.eam.asset.utilities.transformer.json"
+  },
+
+  "$comment": "A specific model definition for a Power Transformer that inherits from the generic Asset definition",
+
+  "allOf": [
+    { "$ref": "abb.eam.asset.json" },
+    { "properties": {
+        "txtype": {
+          "type": "string",
+          "enum": [
+            "Power Transformer",
+            "Distribution Transformer"
+          ]
+        },
+        "manufacturer": {
+          "type": "string",
+          "enum": [
+            "ABB",
+            "GE",
+            "Siemens"
+          ]
+        }
+      }
+    }
+  ]
+}

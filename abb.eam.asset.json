@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://localhost/DE_CIM_Model/abb.eam.asset.json#",
+  "title": "Asset Model",
+  "model-metadata": {
+    "model-version": "1.0.0",
+    "model-name": "abb.eam.asset.json"
+  },
+
+  "$comment": "This is a definition of a generic asset that can be used for anything but with limited definition of element specific to that asset",
+
+  "abb.eam.asset.typedefinitions": {
+    "statustypes": {
+      "type": "string",
+      "enum": [
+        "Installed",
+        "Proposed",
+        "Abandoned",
+        "Active"
+      ]
+    },
+    "secondaryattribute": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "dataType": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "value"
+      ]
+    }
+  },
+
+  "$comment": "Below is the definition of asset itself. Note that an Asset may have associated sub-assets, sub-components and features.",
+
+  "type": "object",
+  "properties": {
+    "assetId": {
+      "type": "string"
+    },
+    "assetDescription": {
+      "type": "string"
+    },
+    "assetStatus": {
+      "$ref": "#/abb.eam.asset.typedefinitions/statustypes"
+    },
+    "assetCriticality": {
+      "type": "string",
+      "enum": [
+        "High",
+        "Medium",
+        "Low"
+      ]
+    },
+    "secondaryAttributes": {
+      "type": "array",
+      "items": { "$ref": "#/abb.eam.asset.typedefinitions/secondaryattribute" },
+      "default": []
+    },
+    "workOrders": {
+      "type": "array",
+      "items": { "$ref": "abb.eam.workorder.json" },
+      "default": []
+    },
+    "location": {
+      "$ref": "abb.eam.location.json"
+    },
+    "parentAssetId": {
+      "type": "string"
+    },
+    "subassets": {
+      "type": "array",
+      "items": { "$ref": "abb.eam.asset.json" },
+      "default": []
+    },
+    "subcomponents": {
+      "type": "array",
+      "items": { "$ref": "abb.eam.component.json" },
+      "default": []
+    },
+    "features": {
+      "type": "array",
+      "items": { "$ref": "abb.eam.feature.json" },
+      "default": []
+    }
+  },
+  "required": [
+    "assetId", "assetDescription", "assetStatus", "secondaryAttributes"
+  ]
+}

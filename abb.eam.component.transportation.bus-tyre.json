@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://localhost/DE_CIM_Model/abb.eam.component.transportation.bus-tyre.json#",
+  "title": "Bus Tyre",
+  "model-metadata": {
+    "model-version": "1.0.0",
+    "model-name": "abb.eam.component.transportation.bus-tyre.json"
+  },
+
+  "$comment": "A specific model definition for a bus tyre",
+
+  "allOf": [
+    { "$ref": "abb.eam.component.json" },
+    { "properties": {
+        "tyreSize": {
+          "type": "integer"
+        },
+        "tyrePosition": {
+          "type": "string",
+          "enum": [
+            "Front Right",
+            "Front Left",
+            "Back Right",
+            "Back Left"
+          ]
+        }
+      }
+    }
+  ]
+}

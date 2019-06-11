@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://localhost/DE_CIM_Model/abb.eam.component.json#",
+  "title": "Component Model",
+  "model-metadata": {
+    "model-version": "1.0.0",
+    "model-name": "abb.eam.component.json"
+  },
+
+  "$comment": "This is a definition of a generic component that can be used for anything but with limited definition of element specific to that component",
+
+  "abb.eam.component.typedefinitions": {
+    "secondaryattribute": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "dataType": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "value"
+      ]
+    }
+  },
+
+  "$comment": "Below is the definition of component itself.",
+
+  "type": "object",
+  "properties": {
+    "componentId": {
+      "type": "string"
+    },
+    "componentDescription": {
+      "type": "string"
+    },
+    "secondaryAttributes": {
+      "type": "array",
+      "items": { "$ref": "#/abb.eam.component.typedefinitions/secondaryattribute" },
+      "default": []
+    },
+    "parentAssetId": {
+      "type": "string"
+    },
+    "assets": {
+      "type": "array",
+      "items": { "$ref": "abb.eam.asset.json" },
+      "maxItems": 1,
+      "default": []
+    }
+  },
+  "required": [
+    "componentId", "componentDescription", "secondaryAttributes"
+  ]
+}

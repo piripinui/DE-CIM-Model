@@ -1,0 +1,136 @@
+{
+  "model-metadata": {
+		"model-version": "1.0.0",
+		"model-name": "abb.eam.assethierarchy.transportation.bus.json"
+  },
+  "root": {
+    "model-metadata": {
+      "model-version": "1.0.0",
+      "model-name": "abb.eam.transportation.mercedes-bus-x345.json"
+    },
+    "assetId": "AS349221",
+    "assetDescription": "Mercedes Bus X345",
+    "assetStatus": "Active",
+    "currentLocation": {
+      "model-metadata": {
+        "model-version": "1.0.0",
+        "model-name": "abb.eam.asset.json"
+      },
+      "locationId": "L2378462378",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 34.23, -57.56 ]
+      }
+    },
+    "secondaryAttributes": [
+      {
+        "name": "modeItemId",
+        "value": "10001",
+        "category": "BUS",
+        "dataType": "string"
+      }
+    ]
+  },
+  "subassets": [
+    {
+      "model-metadata": {
+    		"model-version": "1.0.0",
+    		"model-name": "abb.eam.asset.transportation.bus-engine.json"
+      },
+      "assetId": "E9438758576549",
+      "assetDescription": "Mercedes Bus Engine",
+      "assetStatus": "Active",
+      "fuelType": "Diesel",
+      "secondaryAttributes": [
+        {
+          "name": "enginesize",
+          "value": "6L",
+          "category": "BUS",
+          "dataType": "string"
+        }
+      ]
+    }
+  ],
+  "subcomponents": [
+    {
+      "model-metadata": {
+    		"model-version": "1.0.0",
+    		"model-name": "abb.eam.component.transportation.bus-tyre.json"
+      },
+      "componentId": "TYRE5687966798",
+      "componentDescription": "Bus Tyre",
+      "parentAssetId": "AS349221",
+      "tyreSize": 48,
+      "tyrePosition": "Back Right",
+      "secondaryAttributes": [
+        {
+          "name": "manufacturer",
+          "value": "Kumho",
+          "category": "TYRES",
+          "dataType": "string"
+        }
+      ],
+      "assets": []
+    },
+    {
+      "model-metadata": {
+    		"model-version": "1.0.0",
+    		"model-name": "abb.eam.component.transportation.bus-tyre.json"
+      },
+      "componentId": "TYRE43095394067",
+      "componentDescription": "Bus Tyre",
+      "parentAssetId": "AS349221",
+      "tyreSize": 43,
+      "tyrePosition": "Front Left",
+      "secondaryAttributes": [
+        {
+          "name": "manufacturer",
+          "value": "Kumho",
+          "category": "TYRES",
+          "dataType": "string"
+        }
+      ],
+      "assets": []
+    },
+    {
+      "model-metadata": {
+    		"model-version": "1.0.0",
+    		"model-name": "abb.eam.component.transportation.bus-tyre.json"
+      },
+      "componentId": "TYRE2385734687394",
+      "componentDescription": "Bus Tyre",
+      "parentAssetId": "AS349221",
+      "tyreSize": 43,
+      "tyrePosition": "Front Right",
+      "secondaryAttributes": [
+        {
+          "name": "manufacturer",
+          "value": "Kumho",
+          "category": "TYRES",
+          "dataType": "string"
+        }
+      ],
+      "assets": []
+    }
+  ],
+  "features": [
+    {
+      "model-metadata": {
+    		"model-version": "1.0.0",
+    		"model-name": "abb.eam.feature.json"
+      },
+      "featureId": "myFeature123",
+      "featureDescription": "Generic Feature",
+      "parentAssetId": "myasset123",
+      "secondaryAttributes": [
+        {
+          "name": "colour",
+          "value": "Pink",
+          "category": "Appearance",
+          "dataType": "string"
+        }
+      ],
+      "assets": []
+    }
+  ]
+}

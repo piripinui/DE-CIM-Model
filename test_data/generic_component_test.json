@@ -1,0 +1,18 @@
+{
+  "model-metadata": {
+		"model-version": "1.0.0",
+		"model-name": "abb.eam.component.json"
+  },
+  "componentId": "mycomponent123",
+  "componentDescription": "Generic component",
+  "parentAssetId": "myasset123",
+  "secondaryAttributes": [
+    {
+      "name": "colour",
+      "value": "Pink",
+      "category": "Appearance",
+      "dataType": "string"
+    }
+  ],
+  "assets": []
+}

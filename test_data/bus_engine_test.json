@@ -1,0 +1,18 @@
+{
+  "model-metadata": {
+		"model-version": "1.0.0",
+		"model-name": "abb.eam.asset.transportation.bus-engine.json"
+  },
+  "assetId": "E9438758576549",
+  "assetDescription": "Mercedes Bus Engine",
+  "assetStatus": "Active",
+  "fuelType": "Diesel",
+  "secondaryAttributes": [
+    {
+      "name": "enginesize",
+      "value": "6L",
+      "category": "BUS",
+      "dataType": "string"
+    }
+  ]
+}

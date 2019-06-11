@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://localhost/DE_CIM_Model/abb.eam.assethierachy.transportation.bus.json#",
+  "title": "Bus Asset Hierarchy Model",
+  "model-metadata": {
+    "model-version": "1.0.0",
+    "model-name": "abb.eam.assethierachy.transportation.bus.json"
+  },
+
+  "$comment": "This is a definition of a bus asset hierarchy with specific constraints on the asset, component types and the number of components that must be provided.",
+
+  "type": "object",
+  "properties": {
+    "root": {
+      "$ref": "abb.eam.asset.transportation.mercedes-bus-x345.json"
+    },
+    "subassets": {
+      "type": "array",
+      "items": { "$ref": "abb.eam.asset.transportation.bus-engine.json" },
+      "default": []
+    },
+    "subcomponents": {
+      "type": "array",
+      "items": { "$ref": "abb.eam.component.transportation.bus-tyre.json" },
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "features": {
+      "type": "array",
+      "items": { "$ref": "abb.eam.feature.json" },
+      "default": []
+    }
+  },
+  "requires": [
+    "root", "subassets", "subcomponents", "features"
+  ]
+}
