@@ -1,0 +1,33 @@
+{
+  "model-metadata": {
+		"model-version": "1.0.0",
+		"model-name": "abb.eam.asset.utilities.transformer.json"
+  },
+  "assetId": "TX12763571265",
+  "assetDescription": "Power Transformer in Big Substation",
+  "assetStatus": "Installed",
+  "type": {
+    "txtype": "Power Transformer",
+    "manufacturer": "ABB"
+  },
+  "secondaryAttributes": [
+    {
+      "name": "admsId",
+      "value": "TX-P-3247",
+      "category": "ADMS",
+      "dataType": "admsId"
+    },
+    {
+      "name": "gisId",
+      "value": "TX-3478564378",
+      "dataType": "gisId"
+    }
+  ],
+  "location": {
+    "locationId": "L2378462378",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [ 34.23, -57.56 ]
+    }
+  }
+}
