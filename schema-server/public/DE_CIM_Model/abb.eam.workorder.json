@@ -1,4 +1,4 @@
-﻿{
+{
     "$schema": "http://json-schema.org/draft-06/schema#",
     "$id": "http://localhost/DE_CIM_Model/abb.eam.workorder.json#",
     "title": "Work Order Model",
@@ -60,8 +60,8 @@
         "startDate": {
             "type": "string"
         },
-        "workorderStatus": {
-            "$ref": "#workOrderStatusTypes"
+        "workOrderStatus": {
+            "$ref": "#/definitions/statustypes"
         },
         "workCompleted": {
             "type": "boolean"
@@ -69,7 +69,7 @@
         "secondaryAttributes": {
             "type": "array",
             "items": {
-                "$ref": "#workOrderSecondaryAttribute"
+                "$ref": "#/definitions/secondaryattribute"
             },
             "default": []
         },
@@ -85,25 +85,14 @@
             "default": []
         },
         "location": {
-            "model-metadata": {
-                "model-version": "1.0.0",
-                "model-name": "abb.eam.asset.json"
-            },
-            "locationId": "L2378462378",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    34.23,
-                    -57.56
-                ]
-            }
+            "$ref": "abb.eam.location.json"
         }
     },
     "required": [
         "workOrderId",
         "workDescription",
         "startDate",
-        "workorderStatus",
+        "workOrderStatus",
         "secondaryAttributes"
     ]
 }

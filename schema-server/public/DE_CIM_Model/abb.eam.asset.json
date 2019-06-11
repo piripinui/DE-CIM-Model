@@ -1,8 +1,49 @@
-﻿{
+{
     "$schema": "http://json-schema.org/draft-06/schema#",
     "$id": "http://localhost/DE_CIM_Model/abb.eam.asset.json",
     "type": "object",
     "title": "Asset Model",
+
+    "model-metadata": {
+        "model-version": "1.0.0",
+        "model-name": "abb.eam.asset.json"
+    },
+
+    "definitions": {
+        "statustypes": {
+            "$id": "#assetStatusTypes",
+            "type": "string",
+            "enum": [
+                "Installed",
+                "Proposed",
+                "Abandoned",
+                "Active"
+            ]
+        },
+        "secondaryattribute": {
+            "$id": "#assetSecondaryAttribute",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "value": {
+                    "type": "string"
+                },
+                "category": {
+                    "type": "string"
+                },
+                "dataType": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name",
+                "value"
+            ]
+        }
+    },
+
     "properties": {
         "assetId": {
             "type": "string"
@@ -11,7 +52,7 @@
             "type": "string"
         },
         "assetStatus": {
-            "$ref": "#assetStatusTypes"
+            "$ref": "#/definitions/statustypes"
         },
         "assetCriticality": {
             "type": "string",
@@ -25,7 +66,7 @@
             "type": "array",
             "default": [],
             "items": {
-                "$ref": "#assetSecondaryAttribute"
+                "$ref": "#/definitions/secondaryattribute"
             }
         },
         "workOrders": {
@@ -68,44 +109,5 @@
         "assetDescription",
         "assetStatus",
         "secondaryAttributes"
-    ],
-    "model-metadata": {
-        "model-version": "1.0.0",
-        "model-name": "abb.eam.asset.json"
-    },
-    "$comment": "Below is the definition of asset itself. Note that an Asset may have associated sub-assets, sub-components and features.",
-    "definitions": {
-        "assetStatusSypes": {
-            "$id": "#assetStatusTypes",
-            "type": "string",
-            "enum": [
-                "Installed",
-                "Proposed",
-                "Abandoned",
-                "Active"
-            ]
-        },
-        "assetSecondaryAttribute": {
-            "$id": "#assetSecondaryAttribute",
-            "type": "object",
-            "properties": {
-                "name": {
-                    "type": "string"
-                },
-                "value": {
-                    "type": "string"
-                },
-                "category": {
-                    "type": "string"
-                },
-                "dataType": {
-                    "type": "string"
-                }
-            },
-            "required": [
-                "name",
-                "value"
-            ]
-        }
-    }
+    ]
 }

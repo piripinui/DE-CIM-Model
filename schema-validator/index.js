@@ -23,7 +23,7 @@ function loadCIMSchema(dirname, resolve, reject) {
 
           function readSchemaDef(filePath) {
             return new Promise(function(resolv, rej) {
-              fs.readFile(filePath, function(err, data) {
+              fs.readFile(filePath, 'utf-8', function(err, data) {
                 if (err) {
                   console.log("Problem reading " + filePath);
                   rej(err);
@@ -33,6 +33,7 @@ function loadCIMSchema(dirname, resolve, reject) {
                   var fn = elems.base;
 
                   try {
+                    // console.log(data);
                     schemas[fn] = JSON.parse(data);
                   }
                   catch(err) {
