@@ -5,7 +5,7 @@
   },
   "assetId": "myasset123",
   "assetDescription": "Generic Asset 12345",
-  "assetStatus": "Installed",
+  "assetStatus": "Under Repair",
   "secondaryAttributes": [
     {
       "name": "admsId",
@@ -75,5 +75,65 @@
       "type": "Point",
       "coordinates": [ 34.23, -57.56 ]
     }
-  }
+  },
+  "subcomponents": [
+    {
+      "model-metadata": {
+    		"model-version": "1.0.0",
+    		"model-name": "abb.eam.component.json"
+      },
+      "componentId": "mycomponent123",
+      "componentDescription": "Generic component",
+      "parentAssetId": "myasset123",
+      "secondaryAttributes": [
+        {
+          "name": "colour",
+          "value": "Pink",
+          "category": "Appearance",
+          "dataType": "string"
+        }
+      ],
+      "assets": [],
+      "subcomponents": []
+    },
+    {
+      "model-metadata": {
+    		"model-version": "1.0.0",
+    		"model-name": "abb.eam.component.json"
+      },
+      "componentId": "complexcomponent123",
+      "componentDescription": "Generic component with a subcomponent",
+      "parentAssetId": "myasset123",
+      "secondaryAttributes": [
+        {
+          "name": "colour",
+          "value": "Pink",
+          "category": "Appearance",
+          "dataType": "string"
+        }
+      ],
+      "assets": [],
+      "subcomponents": [
+        {
+          "model-metadata": {
+        		"model-version": "1.0.0",
+        		"model-name": "abb.eam.component.json"
+          },
+          "componentId": "subcomponent123",
+          "componentDescription": "A generic subcomponent with no children",
+          "parentAssetId": "myasset123",
+          "secondaryAttributes": [
+            {
+              "name": "colour",
+              "value": "Pink",
+              "category": "Appearance",
+              "dataType": "string"
+            }
+          ],
+          "assets": [],
+          "subcomponents": []
+        }
+      ]
+    }
+  ]
 }

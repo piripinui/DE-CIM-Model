@@ -30,6 +30,11 @@
       "items": { "$ref": "abb.eam.asset.json" },
       "maxItems": 1,
       "default": []
+    },
+    "subcomponents": {
+      "type": "array",
+      "items": { "$ref": "abb.eam.component.json" },
+      "default": []
     }
   },
   "required": [
