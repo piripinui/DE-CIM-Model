@@ -6,8 +6,10 @@
   "assetId": "TX12763571265",
   "assetDescription": "Power Transformer in Big Substation",
   "assetStatus": "Installed",
-  "txtype": "Power Transformer",
-  "manufacturer": "Cowboy Inc",
+  "type": {
+    "txtype": "Power Transformer",
+    "manufacturer": "ABB"
+  },
   "secondaryAttributes": [
     {
       "name": "admsId",
