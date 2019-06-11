@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "http://localhost/DE_CIM_Model/abb.eam.asset.secondaryattribute.json",
+    "type": "object",
+    "title": "Asset Secondary Attribute Model",
+
+    "model-metadata": {
+        "model-version": "1.0.0",
+        "model-name": "abb.eam.asset.secondaryattribute.json"
+    },
+
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "value": {
+            "type": "string"
+        },
+        "category": {
+            "type": "string"
+        },
+        "dataType": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "name",
+        "value"
+    ]
+}
