@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "http://localhost/DE_CIM_Model/abb.eam.asset.statustypes.json",
+    "type": "object",
+    "title": "Asset Status Types Model",
+
+    "model-metadata": {
+        "model-version": "1.0.0",
+        "model-name": "abb.eam.asset.statustypes.json"
+    },
+
+    "type": "string",
+    "enum": [
+        "Installed",
+        "Proposed",
+        "Abandoned",
+        "Active"
+    ]
+}
