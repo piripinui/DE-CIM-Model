@@ -20,12 +20,7 @@
             "$ref": "abb.eam.asset.statustypes.json"
         },
         "assetCriticality": {
-            "type": "string",
-            "enum": [
-                "High",
-                "Medium",
-                "Low"
-            ]
+            "$ref": "abb.eam.asset.criticalitytypes.json"
         },
         "secondaryAttributes": {
             "type": "array",

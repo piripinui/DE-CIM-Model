@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "http://localhost/DE_CIM_Model/abb.eam.asset.criticalitytypes.json",
+    "type": "object",
+    "title": "Asset Criticality Types Model",
+
+    "model-metadata": {
+        "model-version": "1.0.0",
+        "model-name": "abb.eam.asset.criticalitytypes.json"
+    },
+
+    "type": "string",
+    "enum": [
+        "High",
+        "Medium",
+        "Low"
+    ]
+}
