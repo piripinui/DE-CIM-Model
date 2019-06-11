@@ -11,7 +11,7 @@
 
     "properties": {
         "assetId": {
-            "type": "string"
+            "$ref": "abb.eam.asset.identity.json"
         },
         "assetDescription": {
             "type": "string"
