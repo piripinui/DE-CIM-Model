@@ -46,16 +46,16 @@
     {
       "model-metadata": {
     		"model-version": "1.0.0",
-    		"model-name": "abb.eam.component.json"
+    		"model-name": "abb.eam.asset.json"
       },
-      "componentId": "mycomponent123",
-      "componentDescription": "This generic component definition shouldn't be here!! Only assets can be sub-asset of an asset.",
-      "parentAssetId": "myasset123",
+      "assetId": "subasset123",
+      "assetDescription": "Generic Sub-Asset 12345",
+      "assetStatus": "Installed",
       "secondaryAttributes": [
         {
-          "name": "inventoryComponentId",
-          "value": "346-43564574",
-          "category": "Inventory",
+          "name": "otherNotes",
+          "value": "Near the brick wall in the substation",
+          "category": "ADMS",
           "dataType": "string"
         }
       ]
@@ -76,6 +76,27 @@
           "value": "346-43564574",
           "category": "Inventory",
           "dataType": "string"
+        }
+      ],
+      "subcomponents": [
+        {
+          "model-metadata": {
+        		"model-version": "1.0.0",
+        		"model-name": "abb.eam.component.json"
+          },
+          "componentId": "subcomponent123",
+          "componentDescription": "Generic sub-component",
+          "parentAssetId": "myasset123",
+          "secondaryAttributes": [
+            {
+              "name": "colour",
+              "value": "Pink",
+              "category": "Appearance",
+              "dataType": "string"
+            }
+          ],
+          "assets": [],
+          "subcomponents": []
         }
       ]
     }
