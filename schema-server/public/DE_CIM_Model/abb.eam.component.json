@@ -1,6 +1,6 @@
-{
+﻿{
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "http://localhost/DE_CIM_Model/abb.eam.component.json#",
+  "$id": "http://localhost/DE_CIM_Model/abb.eam.component.json",
   "title": "Component Model",
   "model-metadata": {
     "model-version": "1.0.0",
@@ -9,8 +9,9 @@
 
   "$comment": "This is a definition of a generic component that can be used for anything but with limited definition of element specific to that component",
 
-  "abb.eam.component.typedefinitions": {
-    "secondaryattribute": {
+  "definitions": {
+    "componentSecondaryAttribute": {
+        "$id": "#componentSecondaryAttribute",
       "type": "object",
       "properties": {
         "name": {
@@ -45,7 +46,7 @@
     },
     "secondaryAttributes": {
       "type": "array",
-      "items": { "$ref": "#/abb.eam.component.typedefinitions/secondaryattribute" },
+      "items": { "$ref": "#componentSecondaryAttribute" },
       "default": []
     },
     "parentAssetId": {

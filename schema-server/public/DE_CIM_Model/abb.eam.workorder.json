@@ -1,98 +1,109 @@
-{
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "http://localhost/DE_CIM_Model/abb.eam.workorder.json#",
-  "title": "Work Order Model",
-  "model-metadata": {
-    "model-version": "1.0.0",
-    "model-name": "abb.eam.workorder.json"
-  },
-
-  "abb.eam.workorder.typedefinitions": {
-    "statustypes": {
-      "type": "string",
-      "enum": [
-        "Requested",
-        "In Progress",
-        "Complete"
-      ]
+﻿{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "http://localhost/DE_CIM_Model/abb.eam.workorder.json#",
+    "title": "Work Order Model",
+    "model-metadata": {
+        "model-version": "1.0.0",
+        "model-name": "abb.eam.workorder.json"
     },
-    "secondaryattributetypes": {
-      "type": "string",
-      "$comment": "employeeId is the identity of a worker associated with this WO, otherwise the value is an arbitrary string or int",
-      "enum": [
-        "employeeId",
-        "string",
-        "int"
-      ]
-    },
-    "secondaryattribute": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string"
+    "definitions": {
+        "statustypes": {
+            "$id": "#workOrderStatusTypes",
+            "type": "string",
+            "enum": [
+                "Requested",
+                "In Progress",
+                "Complete"
+            ]
         },
-        "value": {
-          "type": "string"
+        "secondaryattributetypes": {
+            "$id": "#workOrderSecondaryAttributeTypes",
+            "type": "string",
+            "$comment": "employeeId is the identity of a worker associated with this WO, otherwise the value is an arbitrary string or int",
+            "enum": [
+                "employeeId",
+                "string",
+                "int"
+            ]
         },
-        "category": {
-          "type": "string"
-        },
-        "dataType": {
-          "type": "string"
+        "secondaryattribute": {
+            "$id": "#workOrderSecondaryAttribute",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "value": {
+                    "type": "string"
+                },
+                "category": {
+                    "type": "string"
+                },
+                "dataType": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name",
+                "value"
+            ]
         }
-      },
-      "required": [
-        "name",
-        "value"
-      ]
-    }
-  },
-
-  "$comment": "Below is the actual definition of Work Order",
-
-  "properties": {
-    "workOrderId": {
-      "type": "string"
     },
-    "workDescription": {
-      "type": "string"
+    "$comment": "Below is the actual definition of Work Order",
+    "properties": {
+        "workOrderId": {
+            "type": "string"
+        },
+        "workDescription": {
+            "type": "string"
+        },
+        "startDate": {
+            "type": "string"
+        },
+        "workorderStatus": {
+            "$ref": "#workOrderStatusTypes"
+        },
+        "workCompleted": {
+            "type": "boolean"
+        },
+        "secondaryAttributes": {
+            "type": "array",
+            "items": {
+                "$ref": "#workOrderSecondaryAttribute"
+            },
+            "default": []
+        },
+        "parentAssetId": {
+            "type": "string"
+        },
+        "assets": {
+            "type": "array",
+            "items": {
+                "$ref": "abb.eam.asset.json"
+            },
+            "maxItems": 1,
+            "default": []
+        },
+        "location": {
+            "model-metadata": {
+                "model-version": "1.0.0",
+                "model-name": "abb.eam.asset.json"
+            },
+            "locationId": "L2378462378",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.23,
+                    -57.56
+                ]
+            }
+        }
     },
-    "startDate": {
-      "type": "string"
-    },
-    "workorderStatus": {
-      "$ref": "#/abb.eam.workorder.typedefinitions/statustypes"
-    },
-    "workCompleted": {
-      "type": "boolean"
-    },
-    "secondaryAttributes": {
-      "type": "array",
-      "items": { "$ref": "#/abb.eam.workorder.typedefinitions/secondaryattribute" },
-      "default": []
-    },
-    "parentAssetId": {
-      "type": "string"
-    },
-    "assets": {
-      "type": "array",
-      "items": { "$ref": "abb.eam.asset.json" },
-      "maxItems": 1,
-      "default": []
-    },
-    "location": {
-      "model-metadata": {
-    		"model-version": "1.0.0",
-    		"model-name": "abb.eam.asset.json"
-      },
-      "locationId": "L2378462378",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [ 34.23, -57.56 ]
-      }
-    }
-  },
-  "required": [
-  	"workOrderId", "workDescription", "startDate", "workorderStatus", "secondaryAttributes"
-  ]
+    "required": [
+        "workOrderId",
+        "workDescription",
+        "startDate",
+        "workorderStatus",
+        "secondaryAttributes"
+    ]
 }

@@ -1,101 +1,111 @@
-{
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "http://localhost/DE_CIM_Model/abb.eam.asset.json#",
-  "title": "Asset Model",
-  "model-metadata": {
-    "model-version": "1.0.0",
-    "model-name": "abb.eam.asset.json"
-  },
-
-  "$comment": "This is a definition of a generic asset that can be used for anything but with limited definition of element specific to that asset",
-
-  "abb.eam.asset.typedefinitions": {
-    "statustypes": {
-      "type": "string",
-      "enum": [
-        "Installed",
-        "Proposed",
-        "Abandoned",
-        "Active"
-      ]
-    },
-    "secondaryattribute": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string"
+﻿{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "http://localhost/DE_CIM_Model/abb.eam.asset.json",
+    "type": "object",
+    "title": "Asset Model",
+    "properties": {
+        "assetId": {
+            "type": "string"
         },
-        "value": {
-          "type": "string"
+        "assetDescription": {
+            "type": "string"
         },
-        "category": {
-          "type": "string"
+        "assetStatus": {
+            "$ref": "#assetStatusTypes"
         },
-        "dataType": {
-          "type": "string"
+        "assetCriticality": {
+            "type": "string",
+            "enum": [
+                "High",
+                "Medium",
+                "Low"
+            ]
+        },
+        "secondaryAttributes": {
+            "type": "array",
+            "default": [],
+            "items": {
+                "$ref": "#assetSecondaryAttribute"
+            }
+        },
+        "workOrders": {
+            "type": "array",
+            "default": [],
+            "items": {
+                "$ref": "abb.eam.workorder.json"
+            }
+        },
+        "location": {
+            "$ref": "abb.eam.location.json"
+        },
+        "parentAssetId": {
+            "type": "string"
+        },
+        "subassets": {
+            "type": "array",
+            "default": [],
+            "items": {
+                "$ref": "abb.eam.asset.json"
+            }
+        },
+        "subcomponents": {
+            "type": "array",
+            "default": [],
+            "items": {
+                "$ref": "abb.eam.component.json"
+            }
+        },
+        "features": {
+            "type": "array",
+            "default": [],
+            "items": {
+                "$ref": "abb.eam.feature.json"
+            }
         }
-      },
-      "required": [
-        "name",
-        "value"
-      ]
+    },
+    "required": [
+        "assetId",
+        "assetDescription",
+        "assetStatus",
+        "secondaryAttributes"
+    ],
+    "model-metadata": {
+        "model-version": "1.0.0",
+        "model-name": "abb.eam.asset.json"
+    },
+    "$comment": "Below is the definition of asset itself. Note that an Asset may have associated sub-assets, sub-components and features.",
+    "definitions": {
+        "assetStatusSypes": {
+            "$id": "#assetStatusTypes",
+            "type": "string",
+            "enum": [
+                "Installed",
+                "Proposed",
+                "Abandoned",
+                "Active"
+            ]
+        },
+        "assetSecondaryAttribute": {
+            "$id": "#assetSecondaryAttribute",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "value": {
+                    "type": "string"
+                },
+                "category": {
+                    "type": "string"
+                },
+                "dataType": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name",
+                "value"
+            ]
+        }
     }
-  },
-
-  "$comment": "Below is the definition of asset itself. Note that an Asset may have associated sub-assets, sub-components and features.",
-
-  "type": "object",
-  "properties": {
-    "assetId": {
-      "type": "string"
-    },
-    "assetDescription": {
-      "type": "string"
-    },
-    "assetStatus": {
-      "$ref": "#/abb.eam.asset.typedefinitions/statustypes"
-    },
-    "assetCriticality": {
-      "type": "string",
-      "enum": [
-        "High",
-        "Medium",
-        "Low"
-      ]
-    },
-    "secondaryAttributes": {
-      "type": "array",
-      "items": { "$ref": "#/abb.eam.asset.typedefinitions/secondaryattribute" },
-      "default": []
-    },
-    "workOrders": {
-      "type": "array",
-      "items": { "$ref": "abb.eam.workorder.json" },
-      "default": []
-    },
-    "location": {
-      "$ref": "abb.eam.location.json"
-    },
-    "parentAssetId": {
-      "type": "string"
-    },
-    "subassets": {
-      "type": "array",
-      "items": { "$ref": "abb.eam.asset.json" },
-      "default": []
-    },
-    "subcomponents": {
-      "type": "array",
-      "items": { "$ref": "abb.eam.component.json" },
-      "default": []
-    },
-    "features": {
-      "type": "array",
-      "items": { "$ref": "abb.eam.feature.json" },
-      "default": []
-    }
-  },
-  "required": [
-    "assetId", "assetDescription", "assetStatus", "secondaryAttributes"
-  ]
 }

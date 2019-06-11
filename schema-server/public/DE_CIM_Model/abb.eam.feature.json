@@ -1,4 +1,4 @@
-{
+﻿{
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "http://localhost/DE_CIM_Model/abb.eam.feature.json#",
   "title": "Feature Model",
@@ -9,27 +9,28 @@
 
   "$comment": "This is a definition of a generic feature that can be used for anything",
 
-  "abb.eam.feature.typedefinitions": {
-    "secondaryattribute": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string"
-        },
-        "value": {
-          "type": "string"
-        },
-        "category": {
-          "type": "string"
-        },
-        "dataType": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "value"
-      ]
+  "definitions": {
+    "featureSecondaryAttribute": {
+        "$id": "#featureSecondaryAttribute",
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "value": {
+              "type": "string"
+            },
+            "category": {
+              "type": "string"
+            },
+            "dataType": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "value"
+          ]
     }
   },
 
@@ -45,7 +46,7 @@
     },
     "secondaryAttributes": {
       "type": "array",
-      "items": { "$ref": "#/abb.eam.feature.typedefinitions/secondaryattribute" },
+      "items": { "$ref": "#featureSecondaryAttribute" },
       "default": []
     },
     "parentAssetId": {

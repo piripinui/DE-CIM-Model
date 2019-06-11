@@ -1,6 +1,6 @@
-{
+﻿{
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "http://localhost/DE_CIM_Model/abb.eam.location.json#",
+  "$id": "http://localhost/DE_CIM_Model/abb.eam.location.json",
   "title": "Location Model",
   "model-metadata": {
     "model-version": "1.0.0",
