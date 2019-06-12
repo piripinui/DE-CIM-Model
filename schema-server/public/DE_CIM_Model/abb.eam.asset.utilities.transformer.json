@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "http://localhost/DE_CIM_Model/abb.eam.asset.utilities.transformer.json#",
+  "$id": "abb.eam.asset.utilities.transformer.json",
   "title": "Transformer Model",
   "model-metadata": {
     "model-version": "1.0.0",

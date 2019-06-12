@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "abb.eam.component.transportation.bus-tyre.json#",
+  "$id": "abb.eam.component.transportation.bus-tyre.json",
   "title": "Bus Tyre",
   "model-metadata": {
     "model-version": "1.0.0",
