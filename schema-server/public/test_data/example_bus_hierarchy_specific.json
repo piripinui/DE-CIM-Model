@@ -8,7 +8,7 @@
       "model-version": "1.0.0",
       "model-name": "abb.eam.transportation.mercedes-bus-x345.json"
     },
-    "assetId": "AS349221",
+    "assetId": "DE-AS349221",
     "assetDescription": "Mercedes Bus X345",
     "assetStatus": "Active",
     "currentLocation": {
@@ -33,11 +33,7 @@
   },
   "subassets": [
     {
-      "model-metadata": {
-    		"model-version": "1.0.0",
-    		"model-name": "abb.eam.asset.transportation.bus-engine.json"
-      },
-      "assetId": "E9438758576549",
+      "assetId": "DE-E9438758576549",
       "assetDescription": "Mercedes Bus Engine",
       "assetStatus": "Active",
       "fuelType": "Diesel",
@@ -53,11 +49,7 @@
   ],
   "subcomponents": [
     {
-      "model-metadata": {
-    		"model-version": "1.0.0",
-    		"model-name": "abb.eam.component.transportation.bus-tyre.json"
-      },
-      "componentId": "TYRE32876578423",
+      "componentId": "DE-TYRE32876578423",
       "componentDescription": "Bus Tyre",
       "parentAssetId": "AS349221",
       "tyreSize": 48,
@@ -73,11 +65,7 @@
       "assets": []
     },
     {
-      "model-metadata": {
-    		"model-version": "1.0.0",
-    		"model-name": "abb.eam.component.transportation.bus-tyre.json"
-      },
-      "componentId": "TYRE5687966798",
+      "componentId": "DE-TYRE5687966798",
       "componentDescription": "Bus Tyre",
       "parentAssetId": "AS349221",
       "tyreSize": 48,
@@ -93,11 +81,7 @@
       "assets": []
     },
     {
-      "model-metadata": {
-    		"model-version": "1.0.0",
-    		"model-name": "abb.eam.component.transportation.bus-tyre.json"
-      },
-      "componentId": "TYRE43095394067",
+      "componentId": "DE-TYRE43095394067",
       "componentDescription": "Bus Tyre",
       "parentAssetId": "AS349221",
       "tyreSize": 43,
@@ -113,11 +97,7 @@
       "assets": []
     },
     {
-      "model-metadata": {
-    		"model-version": "1.0.0",
-    		"model-name": "abb.eam.component.transportation.bus-tyre.json"
-      },
-      "componentId": "TYRE2385734687394",
+      "componentId": "DE-TYRE2385734687394",
       "componentDescription": "Bus Tyre",
       "parentAssetId": "AS349221",
       "tyreSize": 43,
@@ -135,11 +115,7 @@
   ],
   "features": [
     {
-      "model-metadata": {
-    		"model-version": "1.0.0",
-    		"model-name": "abb.eam.feature.json"
-      },
-      "featureId": "myFeature123",
+      "featureId": "DE-myFeature123",
       "featureDescription": "Generic Feature",
       "parentAssetId": "myasset123",
       "secondaryAttributes": [
