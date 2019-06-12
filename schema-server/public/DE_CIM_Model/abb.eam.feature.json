@@ -11,24 +11,29 @@
   "type": "object",
   "properties": {
     "featureId": {
-      "type": "string"
+      "type": "string",
+      "description": "The unique identifier of a Feature"
     },
     "featureDescription": {
-      "type": "string"
+      "type": "string",
+      "description": "An informal description of the Feature"
     },
     "secondaryAttributes": {
       "type": "array",
       "items": { "$ref": "abb.eam.feature.secondaryattribute.json" },
-      "default": []
+      "default": [],
+      "description": "A set of attributes that can be associated with a Feature"
     },
     "parentAssetId": {
-      "type": "string"
+      "type": "string",
+      "description": "The parent Asset of this Feature (Features must have parent Assets)"
     },
     "assets": {
       "type": "array",
       "items": { "$ref": "abb.eam.asset.json" },
       "maxItems": 1,
-      "default": []
+      "default": [],
+      "description": "The set of parent Assets associated with this Feature (always only one)"
     }
   },
   "required": [
