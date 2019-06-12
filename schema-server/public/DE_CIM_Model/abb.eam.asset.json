@@ -3,6 +3,7 @@
     "$id": "abb.eam.asset.json",
     "type": "object",
     "title": "Asset Model",
+    "description": "The generic description of an Asset",
 
     "model-metadata": {
         "model-version": "1.0.0",
@@ -11,18 +12,23 @@
 
     "properties": {
         "assetId": {
+            "description": "The unique identier of the Asset",
             "$ref": "abb.eam.asset.identity.json"
         },
         "assetDescription": {
+            "description": "An informal description of the Asset",
             "type": "string"
         },
         "assetStatus": {
+            "description": "The current status of the Asset",
             "$ref": "abb.eam.asset.statustypes.json"
         },
         "assetCriticality": {
+            "description": "The current criticality of the Asset",
             "$ref": "abb.eam.asset.criticalitytypes.json"
         },
         "secondaryAttributes": {
+            "description": "A set of additional attributes associated with the Asset",
             "type": "array",
             "default": [],
             "items": {
@@ -30,6 +36,7 @@
             }
         },
         "workOrders": {
+            "description": "Work Orders that are associated with this Asset",
             "type": "array",
             "default": [],
             "items": {
@@ -37,12 +44,15 @@
             }
         },
         "location": {
+            "description": "The point location of the Asset represented by a coordinate",
             "$ref": "abb.eam.location.json"
         },
         "parentAssetId": {
+            "description": "This Asset's parent Asset (if any)",
             "type": "string"
         },
         "subassets": {
+            "description": "This Asset's child Assets (if any)",
             "type": "array",
             "default": [],
             "items": {
@@ -50,6 +60,7 @@
             }
         },
         "subcomponents": {
+            "description": "This Asset's sub-components (if any)",
             "type": "array",
             "default": [],
             "items": {
@@ -57,6 +68,7 @@
             }
         },
         "features": {
+            "description": "This Asset's features (if any)",
             "type": "array",
             "default": [],
             "items": {
