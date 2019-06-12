@@ -6,6 +6,7 @@
         "model-version": "1.0.0",
         "model-name": "abb.eam.workorder.json"
     },
+    "description": "The generic description of a Work Order",
 
     "$comment": "Below is the actual definition of Work Order",
 

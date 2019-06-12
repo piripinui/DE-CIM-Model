@@ -3,6 +3,7 @@
     "$id": "abb.eam.asset.statustypes.json",
     "type": "object",
     "title": "Asset Status Types Model",
+    "description": "A set of valid status types for Assets",
 
     "model-metadata": {
         "model-version": "1.0.0",

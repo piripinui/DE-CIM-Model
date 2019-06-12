@@ -3,6 +3,7 @@
     "$id": "abb.eam.component.secondaryattribute.json",
     "type": "object",
     "title": "Component Secondary Attribute Model",
+    "description": "The definition of a Component's secondary attributes",
 
     "model-metadata": {
         "model-version": "1.0.0",

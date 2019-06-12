@@ -6,6 +6,7 @@
     "model-version": "1.0.0",
     "model-name": "abb.eam.assethierarchy.json"
   },
+  "description": "The generic model of the Asset, Component and Feature hierarchy",
 
   "$comment": "This is a definition of a generic asset hierarchy that can be used for anything",
 

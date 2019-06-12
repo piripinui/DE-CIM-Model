@@ -3,6 +3,7 @@
     "$id": "abb.eam.feature.secondaryattribute.json",
     "type": "object",
     "title": "Feature Secondary Attribute Model",
+    "description": "The definition of a Feature's secondary attributes",
 
     "model-metadata": {
         "model-version": "1.0.0",

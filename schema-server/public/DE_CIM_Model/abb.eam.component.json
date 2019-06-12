@@ -6,6 +6,7 @@
     "model-version": "1.0.0",
     "model-name": "abb.eam.component.json"
   },
+  "description": "The generic model of a Component",
 
   "$comment": "Below is the definition of component itself.",
 

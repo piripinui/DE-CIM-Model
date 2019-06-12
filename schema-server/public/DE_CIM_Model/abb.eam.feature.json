@@ -2,6 +2,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "abb.eam.feature.json",
   "title": "Feature Model",
+  "description": "The generic definition of a Feature",
   "model-metadata": {
     "model-version": "1.0.0",
     "model-name": "abb.eam.feature.json"

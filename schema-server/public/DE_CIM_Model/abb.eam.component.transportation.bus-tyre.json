@@ -2,6 +2,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "abb.eam.component.transportation.bus-tyre.json",
   "title": "Bus Tyre",
+  "description": "A specific definition of a bus tyre Component",
   "model-metadata": {
     "model-version": "1.0.0",
     "model-name": "abb.eam.component.transportation.bus-tyre.json"

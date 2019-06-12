@@ -3,6 +3,7 @@
     "$id": "abb.eam.asset.secondaryattribute.json",
     "type": "object",
     "title": "Asset Secondary Attribute Model",
+    "description": "A set of attributes for Assets that can be added in an ad-hoc manner",
 
     "model-metadata": {
         "model-version": "1.0.0",

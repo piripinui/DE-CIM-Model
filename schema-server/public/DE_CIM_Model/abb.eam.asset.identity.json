@@ -3,6 +3,7 @@
     "$id": "abb.eam.asset.identity.json",
     "type": "object",
     "title": "Asset Identity Model",
+    "description": "The description of a identity string conforming to a naming convention pattern",
 
     "$comment": "This model defines that identity values must have the form DE-xxxxxxx",
 
