@@ -13,29 +13,35 @@
   "type": "object",
   "properties": {
     "componentId": {
-      "type": "string"
+      "type": "string",
+      "description": "The unique identifier for a Component"
     },
     "componentDescription": {
-      "type": "string"
+      "type": "string",
+      "description": "An information description of the Component"
     },
     "secondaryAttributes": {
       "type": "array",
       "items": { "$ref": "abb.eam.component.secondaryattribute.json" },
-      "default": []
+      "default": [],
+      "description": "A set of attributes associated with the Component"
     },
     "parentAssetId": {
-      "type": "string"
+      "type": "string",
+      "description": "The identifier of the Asset that is the parent of this Component (Component must have Asset parents)"
     },
     "assets": {
       "type": "array",
       "items": { "$ref": "abb.eam.asset.json" },
       "maxItems": 1,
-      "default": []
+      "default": [],
+      "description": "The set of Assets that are parents of this Component (can only be one)"
     },
     "subcomponents": {
       "type": "array",
       "items": { "$ref": "abb.eam.component.json" },
-      "default": []
+      "default": [],
+      "description": "The set of Components that are sub-components of this Component"
     }
   },
   "required": [
