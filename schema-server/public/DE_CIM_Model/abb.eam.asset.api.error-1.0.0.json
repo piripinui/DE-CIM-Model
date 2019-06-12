@@ -1,15 +1,10 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "abb.eam.asset.api.error.json",
+    "$id": "abb.eam.asset.api.error-1.0.0.json",
     "type": "object",
     "title": "Generic error response definition",
 
     "description": "The structure of error responses returned by asset services",
-
-    "model-metadata": {
-        "model-version": "1.0.0",
-        "model-name": "abb.eam.asset.api.error.json"
-    },
 
     "properties": {
       "errorCode": {

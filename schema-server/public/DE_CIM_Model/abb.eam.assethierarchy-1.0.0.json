@@ -1,11 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "abb.eam.assethierachy.json",
+  "$id": "abb.eam.assethierachy-1.0.0.json",
   "title": "Asset Hierarchy Model",
-  "model-metadata": {
-    "model-version": "1.0.0",
-    "model-name": "abb.eam.assethierarchy.json"
-  },
   "description": "The generic model of the Asset, Component and Feature hierarchy",
 
   "$comment": "This is a definition of a generic asset hierarchy that can be used for anything",
@@ -13,21 +9,21 @@
   "type": "object",
   "properties": {
     "root": {
-      "$ref": "abb.eam.asset.json"
+      "$ref": "abb.eam.asset-1.0.0.json"
     },
     "subassets": {
       "type": "array",
-      "items": { "$ref": "abb.eam.asset.json" },
+      "items": { "$ref": "abb.eam.asset-1.0.0.json" },
       "default": []
     },
     "subcomponents": {
       "type": "array",
-      "items": { "$ref": "abb.eam.component.json" },
+      "items": { "$ref": "abb.eam.component-1.0.0.json" },
       "default": []
     },
     "features": {
       "type": "array",
-      "items": { "$ref": "abb.eam.feature.json" },
+      "items": { "$ref": "abb.eam.feature-1.0.0.json" },
       "default": []
     }
   },

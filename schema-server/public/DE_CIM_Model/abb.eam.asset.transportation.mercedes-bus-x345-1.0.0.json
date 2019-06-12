@@ -1,21 +1,17 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "abb.eam.asset.transportation.mercedes-bus-x345.json",
+  "$id": "abb.eam.asset.transportation.mercedes-bus-x345-1.0.0.json",
   "title": "Mercedes Bus X345 Model",
-  "model-metadata": {
-    "model-version": "1.0.0",
-    "model-name": "abb.eam.asset.transportation.mercedes-bus-x345.json"
-  },
   "description": "This is an example of an Asset definition representing a (fictional) type of Mercedes bus. It derives from the generic Asset definition but adds a 'ModelItemId' property",
 
   "$comment": "A specific model definition for a Mercedes X345 bus",
 
   "allOf": [
-    { "$ref": "abb.eam.asset.json" },
+    { "$ref": "abb.eam.asset-1.0.0.json" },
     { "properties": {
 		"subcomponents": {
 			"type": "array",
-			"items": { "$ref": "abb.eam.component.transportation.bus-tyre.json" },
+			"items": { "$ref": "abb.eam.component.transportation.bus-tyre-1.0.0.json" },
 			"maxItems": 4,
 			"minItems": 4,
 			"description": "Overrides the default subcomponents property by specifying that there must be exactly 4 Components of type Bus Tyre"

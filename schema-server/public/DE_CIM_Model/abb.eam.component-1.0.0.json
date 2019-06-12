@@ -1,11 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "abb.eam.component.json",
+  "$id": "abb.eam.component-1.0.0.json",
   "title": "Component Model",
-  "model-metadata": {
-    "model-version": "1.0.0",
-    "model-name": "abb.eam.component.json"
-  },
   "description": "The generic model of a Component",
 
   "$comment": "Below is the definition of component itself.",
@@ -22,7 +18,7 @@
     },
     "secondaryAttributes": {
       "type": "array",
-      "items": { "$ref": "abb.eam.component.secondaryattribute.json" },
+      "items": { "$ref": "abb.eam.component.secondaryattribute-1.0.0.json" },
       "default": [],
       "description": "A set of attributes associated with the Component"
     },
@@ -32,14 +28,14 @@
     },
     "assets": {
       "type": "array",
-      "items": { "$ref": "abb.eam.asset.json" },
+      "items": { "$ref": "abb.eam.asset-1.0.0.json" },
       "maxItems": 1,
       "default": [],
       "description": "The set of Assets that are parents of this Component (can only be one)"
     },
     "subcomponents": {
       "type": "array",
-      "items": { "$ref": "abb.eam.component.json" },
+      "items": { "$ref": "abb.eam.component-1.0.0.json" },
       "default": [],
       "description": "The set of Components that are sub-components of this Component"
     }

@@ -1,17 +1,13 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "abb.eam.asset.transportation.bus-engine.json",
+  "$id": "abb.eam.asset.transportation.bus-engine-1.0.0.json",
   "title": "Bus Engine Model",
-  "model-metadata": {
-    "model-version": "1.0.0",
-    "model-name": "abb.eam.asset.transportation.bus-engine.json"
-  },
   "description": "An example definition for a bus engine sub-Asset type associated with the Mercedes Bus Asset type as its parent. It derives from the generic Asset definition but adds a FuelType property",
 
   "$comment": "A specific model definition for a bus engine",
 
   "allOf": [
-    { "$ref": "abb.eam.asset.json" },
+    { "$ref": "abb.eam.asset-1.0.0.json" },
     { "properties": {
         "fuelType": {
           "type": "string",

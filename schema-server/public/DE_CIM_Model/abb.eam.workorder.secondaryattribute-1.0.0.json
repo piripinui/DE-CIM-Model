@@ -1,13 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "abb.eam.workorder.secondaryattribute.json",
+    "$id": "abb.eam.workorder.secondaryattribute-1.0.0.json",
     "type": "object",
     "title": "Work Order Secondary Attribute Model",
-
-    "model-metadata": {
-        "model-version": "1.0.0",
-        "model-name": "abb.eam.workorder.secondaryattribute.json"
-    },
 
     "type": "object",
     "properties": {

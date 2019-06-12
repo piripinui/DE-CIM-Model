@@ -1,16 +1,11 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "abb.eam.asset.identity.json",
+    "$id": "abb.eam.asset.identity-1.0.0.json",
     "type": "object",
     "title": "Asset Identity Model",
     "description": "The description of a identity string conforming to a naming convention pattern",
 
     "$comment": "This model defines that identity values must have the form DE-xxxxxxx",
-
-    "model-metadata": {
-        "model-version": "1.0.0",
-        "model-name": "abb.eam.asset.identity.json"
-    },
 
     "type": "string",
     "pattern": "^DE-(.*)"

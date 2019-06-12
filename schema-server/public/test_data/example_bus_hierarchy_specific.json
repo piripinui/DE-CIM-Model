@@ -1,21 +1,9 @@
 {
-  "model-metadata": {
-		"model-version": "1.0.0",
-		"model-name": "abb.eam.assethierarchy.transportation.bus.json"
-  },
   "root": {
-    "model-metadata": {
-      "model-version": "1.0.0",
-      "model-name": "abb.eam.transportation.mercedes-bus-x345.json"
-    },
     "assetId": "DE-AS349221",
     "assetDescription": "Mercedes Bus X345",
     "assetStatus": "Active",
-    "currentLocation": {
-      "model-metadata": {
-        "model-version": "1.0.0",
-        "model-name": "abb.eam.asset.json"
-      },
+    "location": {
       "locationId": "L2378462378",
       "geometry": {
         "type": "Point",

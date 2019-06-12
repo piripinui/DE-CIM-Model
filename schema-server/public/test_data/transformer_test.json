@@ -1,8 +1,4 @@
 {
-  "model-metadata": {
-		"model-version": "1.0.0",
-		"model-name": "abb.eam.asset.utilities.transformer.json"
-  },
   "assetId": "DE-TX12763571265",
   "assetDescription": "Power Transformer in Big Substation",
   "assetStatus": "Installed",
@@ -25,10 +21,6 @@
   ],
   "workOrders": [
     {
-      "model-metadata": {
-        "model-version": "1.0.0",
-        "model-name": "abb.eam.workorder.json"
-      },
       "workOrderId": "WO283745636485",
       "workDescription": "Inspect the transformer's gas",
       "startDate": "12/05/19",
@@ -44,10 +36,6 @@
       ]
     },
     {
-      "model-metadata": {
-        "model-version": "1.0.0",
-        "model-name": "abb.eam.workorder.json"
-      },
       "workOrderId": "WO283745636485",
       "workDescription": "Fix the transformer",
       "startDate": "14/05/19",
@@ -64,10 +52,6 @@
     }
   ],
   "location": {
-    "model-metadata": {
-  		"model-version": "1.0.0",
-  		"model-name": "abb.eam.asset.json"
-    },
     "locationId": "L2378462378",
     "geometry": {
       "type": "Point",

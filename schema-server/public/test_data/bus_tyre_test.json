@@ -1,8 +1,4 @@
 {
-  "model-metadata": {
-		"model-version": "1.0.0",
-		"model-name": "abb.eam.component.transportation.bus-tyre.json"
-  },
   "componentId": "TYRE32876578423",
   "componentDescription": "Bus Tyre",
   "parentAssetId": "AS349221",

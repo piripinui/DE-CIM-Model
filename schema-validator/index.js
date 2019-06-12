@@ -8,6 +8,7 @@ commandLineUsage = require('command-line-usage');
 const optionDefinitions = [
   { name: 'schemadir', alias: 'd', type: String },
   { name: 'instancefile', type: String },
+  { name: 'schema', type: String },
   { name: 'help', type: Boolean}
 ],
 options = commandLineArgs(optionDefinitions),
@@ -28,6 +29,11 @@ sections = [
         name: 'instancefile',
         typeLabel: '{underline file}',
         description: 'The file to validate using the JSON Schema.'
+      },
+      {
+        name: 'schema',
+        typeLabel: '{underline schemaname}',
+        description: 'The name of schema to validate the instance file against.'
       },
       {
         name: 'help',
@@ -107,7 +113,7 @@ function checkJSONDocument(fileName) {
     }
     else {
       var doc = JSON.parse(data);
-      var modelName = doc["model-metadata"]["model-name"];
+      var modelName = options.schema;
       console.log("Loaded JSON document " + fileName + ", validating against model " + modelName + "...");
       var targetSchema = schemas[modelName];
 
@@ -126,7 +132,7 @@ function init() {
     console.log(usage);
   }
   else {
-    if (options.schemadir && options.instancefile) {
+    if (options.schemadir && options.instancefile && options.schema) {
       var promise = new Promise(function(resolve, reject) {
         loadCIMSchema(options.schemadir, resolve, reject);
       });

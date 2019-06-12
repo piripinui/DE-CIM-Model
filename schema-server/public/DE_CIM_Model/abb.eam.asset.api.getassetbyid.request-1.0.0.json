@@ -1,19 +1,14 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "abb.eam.asset.api.getassetbyid.request.json",
+    "$id": "abb.eam.asset.api.getassetbyid.request-1.0.0.json",
     "type": "object",
     "title": "API definition for request for an Asset given an id",
 
     "description": "The structure of the message used when requesting an Asset given an asset identifier",
 
-    "model-metadata": {
-        "model-version": "1.0.0",
-        "model-name": "abb.eam.asset.api.getassetbyid.request.json"
-    },
-
     "properties": {
       "assetId": {
-        "$ref": "abb.eam.asset.identity.json"
+        "$ref": "abb.eam.asset.identity-1.0.0.json"
       }
     },
     "required": [

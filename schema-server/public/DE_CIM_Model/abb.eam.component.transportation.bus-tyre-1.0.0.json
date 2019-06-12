@@ -1,18 +1,14 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "abb.eam.component.transportation.bus-tyre.json",
+  "$id": "abb.eam.component.transportation.bus-tyre-1.0.0.json",
   "title": "Bus Tyre",
   "description": "A specific definition of a bus tyre Component",
-  "model-metadata": {
-    "model-version": "1.0.0",
-    "model-name": "abb.eam.component.transportation.bus-tyre.json"
-  },
   "description": "A definition for a bus tyre Component type, associated with the Mercedes Bus Asset type. It derievs from the generic Component definition but adds TyreSize and TyrePosition properties.",
 
   "$comment": "A specific model definition for a bus tyre",
 
   "allOf": [
-    { "$ref": "abb.eam.component.json" },
+    { "$ref": "abb.eam.component-1.0.0.json" },
     { "properties": {
         "tyreSize": {
           "type": "integer",

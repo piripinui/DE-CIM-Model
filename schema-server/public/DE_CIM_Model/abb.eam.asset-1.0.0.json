@@ -1,35 +1,30 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "abb.eam.asset.json",
+    "$id": "abb.eam.asset-1.0.0.json",
     "type": "object",
     "title": "Asset Model",
     "description": "The generic description of an Asset",
 
-    "model-metadata": {
-        "model-version": "1.0.0",
-        "model-name": "abb.eam.asset.json"
-    },
-
     "properties": {
         "assetId": {
-            "$ref": "abb.eam.asset.identity.json"
+            "$ref": "abb.eam.asset.identity-1.0.0.json"
         },
         "assetDescription": {
             "description": "An informal description of the Asset",
             "type": "string"
         },
         "assetStatus": {
-            "$ref": "abb.eam.asset.statustypes.json"
+            "$ref": "abb.eam.asset.statustypes-1.0.0.json"
         },
         "assetCriticality": {
-            "$ref": "abb.eam.asset.criticalitytypes.json"
+            "$ref": "abb.eam.asset.criticalitytypes-1.0.0.json"
         },
         "secondaryAttributes": {
             "description": "A set of additional attributes associated with the Asset",
             "type": "array",
             "default": [],
             "items": {
-                "$ref": "abb.eam.asset.secondaryattribute.json"
+                "$ref": "abb.eam.asset.secondaryattribute-1.0.0.json"
             }
         },
         "workOrders": {
@@ -37,11 +32,11 @@
             "type": "array",
             "default": [],
             "items": {
-                "$ref": "abb.eam.workorder.json"
+                "$ref": "abb.eam.workorder-1.0.0.json"
             }
         },
         "location": {
-            "$ref": "abb.eam.location.json"
+            "$ref": "abb.eam.location-1.0.0.json"
         },
         "parentAssetId": {
             "description": "This Asset's parent Asset (if any)",
@@ -52,7 +47,7 @@
             "type": "array",
             "default": [],
             "items": {
-                "$ref": "abb.eam.asset.json"
+                "$ref": "abb.eam.asset-1.0.0.json"
             }
         },
         "subcomponents": {
@@ -60,15 +55,15 @@
             "type": "array",
             "default": [],
             "items": {
-                "$ref": "abb.eam.component.json"
+                "$ref": "abb.eam.component-1.0.0.json"
             }
         },
-        "features": {
+        "components": {
             "description": "This Asset's features (if any)",
             "type": "array",
             "default": [],
             "items": {
-                "$ref": "abb.eam.feature.json"
+                "$ref": "abb.eam.feature-1.0.0.json"
             }
         }
     },

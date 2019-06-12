@@ -1,14 +1,5 @@
 {
-  "model-metadata": {
-      "model-version": "1.0.0",
-      "model-name": "abb.eam.asset.api.getassetbyid.response.json"
-  },
-
   "result": {
-    "model-metadata": {
-      "model-version": "1.0.0",
-      "model-name": "abb.eam.asset.json"
-    },
     "assetId": "DE-myasset123",
     "assetDescription": "Generic Asset 12345",
     "assetStatus": "Under Repair",
@@ -35,7 +26,7 @@
       {
         "model-metadata": {
           "model-version": "1.0.0",
-          "model-name": "abb.eam.workorder.json"
+          "model-name": "abb.eam.workorder-1.0.0.json"
         },
         "workOrderId": "WO283745636485",
         "workDescription": "Inspect the asset",
@@ -54,7 +45,7 @@
       {
         "model-metadata": {
           "model-version": "1.0.0",
-          "model-name": "abb.eam.workorder.json"
+          "model-name": "abb.eam.workorder-1.0.0.json"
         },
         "workOrderId": "WO283745636485",
         "workDescription": "Fix the asset",
@@ -74,7 +65,7 @@
     "location": {
       "model-metadata": {
         "model-version": "1.0.0",
-        "model-name": "abb.eam.asset.json"
+        "model-name": "abb.eam.asset-1.0.0.json"
       },
       "locationId": "L2378462378",
       "geometry": {
@@ -86,7 +77,7 @@
       {
         "model-metadata": {
           "model-version": "1.0.0",
-          "model-name": "abb.eam.component.json"
+          "model-name": "abb.eam.component-1.0.0.json"
         },
         "componentId": "mycomponent123",
         "componentDescription": "Generic component",
@@ -105,7 +96,7 @@
       {
         "model-metadata": {
           "model-version": "1.0.0",
-          "model-name": "abb.eam.component.json"
+          "model-name": "abb.eam.component-1.0.0.json"
         },
         "componentId": "complexcomponent123",
         "componentDescription": "Generic component with a subcomponent",
@@ -123,7 +114,7 @@
           {
             "model-metadata": {
               "model-version": "1.0.0",
-              "model-name": "abb.eam.component.json"
+              "model-name": "abb.eam.component-1.0.0.json"
             },
             "componentId": "subcomponent123",
             "componentDescription": "A generic subcomponent with no children",

@@ -1,13 +1,5 @@
 {
-  "model-metadata": {
-		"model-version": "1.0.0",
-		"model-name": "abb.eam.assethierarchy.json"
-  },
   "root": {
-      "model-metadata": {
-    		"model-version": "1.0.0",
-    		"model-name": "abb.eam.asset.json"
-      },
       "assetId": "myasset123",
       "assetDescription": "Generic Asset 12345",
       "assetStatus": "Installed",
@@ -32,10 +24,6 @@
       ],
       "workOrders": [
         {
-          "model-metadata": {
-            "model-version": "1.0.0",
-            "model-name": "abb.eam.workorder.json"
-          },
           "workOrderId": "WO283745636485",
           "workDescription": "Inspect the asset",
           "startDate": "12/05/19",
@@ -51,10 +39,6 @@
           ]
         },
         {
-          "model-metadata": {
-            "model-version": "1.0.0",
-            "model-name": "abb.eam.workorder.json"
-          },
           "workOrderId": "WO283745636485",
           "workDescription": "Fix the asset",
           "startDate": "14/05/19",
@@ -71,10 +55,6 @@
         }
       ],
       "location": {
-        "model-metadata": {
-      		"model-version": "1.0.0",
-      		"model-name": "abb.eam.asset.json"
-        },
         "locationId": "L2378462378",
         "geometry": {
           "type": "Point",
@@ -84,10 +64,6 @@
   },
   "subassets": [
     {
-      "model-metadata": {
-    		"model-version": "1.0.0",
-    		"model-name": "abb.eam.asset.json"
-      },
       "assetId": "mysubasset943857123",
       "assetDescription": "Generic Sub-Asset object",
       "assetStatus": "Installed",
@@ -112,10 +88,6 @@
       ],
       "workOrders": [
         {
-          "model-metadata": {
-            "model-version": "1.0.0",
-            "model-name": "abb.eam.workorder.json"
-          },
           "workOrderId": "WO283745636485",
           "workDescription": "Inspect the asset",
           "startDate": "12/05/19",
@@ -131,10 +103,6 @@
           ]
         },
         {
-          "model-metadata": {
-            "model-version": "1.0.0",
-            "model-name": "abb.eam.workorder.json"
-          },
           "workOrderId": "WO283745636485",
           "workDescription": "Fix the asset",
           "startDate": "14/05/19",
@@ -151,10 +119,6 @@
         }
       ],
       "location": {
-        "model-metadata": {
-      		"model-version": "1.0.0",
-      		"model-name": "abb.eam.asset.json"
-        },
         "locationId": "L2378462378",
         "geometry": {
           "type": "Point",
@@ -165,10 +129,6 @@
   ],
   "subcomponents": [
     {
-      "model-metadata": {
-    		"model-version": "1.0.0",
-    		"model-name": "abb.eam.component.json"
-      },
       "componentId": "mycomponent123",
       "componentDescription": "Generic component",
       "assetId": "myasset123",
@@ -182,10 +142,6 @@
       ]
     },
     {
-      "model-metadata": {
-    		"model-version": "1.0.0",
-    		"model-name": "abb.eam.component.json"
-      },
       "componentId": "mycomponent456",
       "componentDescription": "Generic component",
       "assetId": "myasset123",
@@ -201,10 +157,6 @@
   ],
   "features": [
     {
-      "model-metadata": {
-    		"model-version": "1.0.0",
-    		"model-name": "abb.eam.feature.json"
-      },
       "featureId": "myFeature123",
       "featureDescription": "Generic Feature",
       "parentAssetId": "myasset123",
@@ -219,10 +171,6 @@
       "assets": []
     },
     {
-      "model-metadata": {
-    		"model-version": "1.0.0",
-    		"model-name": "abb.eam.feature.json"
-      },
       "featureId": "myFeature456",
       "featureDescription": "Generic Feature",
       "parentAssetId": "myasset123",

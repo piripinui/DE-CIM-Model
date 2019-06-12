@@ -1,14 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "abb.eam.asset.statustypes.json",
+    "$id": "abb.eam.asset.statustypes-1.0.0.json",
     "type": "object",
     "title": "Asset Status Types Model",
     "description": "A set of valid status types for Assets",
-
-    "model-metadata": {
-        "model-version": "1.0.0",
-        "model-name": "abb.eam.asset.statustypes.json"
-    },
 
     "type": "string",
     "enum": [

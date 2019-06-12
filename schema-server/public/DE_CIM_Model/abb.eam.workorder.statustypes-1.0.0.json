@@ -1,14 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "abb.eam.workorder.statustypes.json",
+    "$id": "abb.eam.workorder.statustypes-1.0.0.json",
     "type": "object",
     "title": "Work Order Status Types Model",
     "description": "The set of valid status types for Work Orders",
-
-    "model-metadata": {
-        "model-version": "1.0.0",
-        "model-name": "abb.eam.workorder.statustypes.json"
-    },
 
     "type": "string",
     "enum": [

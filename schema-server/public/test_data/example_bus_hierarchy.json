@@ -1,21 +1,9 @@
 {
-  "model-metadata": {
-		"model-version": "1.0.0",
-		"model-name": "abb.eam.assethierarchy.json"
-  },
   "root": {
-    "model-metadata": {
-      "model-version": "1.0.0",
-      "model-name": "abb.eam.transportation.mercedes-bus-x345.json"
-    },
     "assetId": "AS349221",
     "assetDescription": "Mercedes Bus X345",
     "assetStatus": "Active",
     "currentLocation": {
-      "model-metadata": {
-        "model-version": "1.0.0",
-        "model-name": "abb.eam.asset.json"
-      },
       "locationId": "L2378462378",
       "geometry": {
         "type": "Point",
@@ -33,10 +21,6 @@
   },
   "subassets": [
     {
-      "model-metadata": {
-    		"model-version": "1.0.0",
-    		"model-name": "abb.eam.asset.transportation.bus-engine.json"
-      },
       "assetId": "E9438758576549",
       "assetDescription": "Mercedes Bus Engine",
       "assetStatus": "Active",
@@ -53,10 +37,6 @@
   ],
   "subcomponents": [
     {
-      "model-metadata": {
-    		"model-version": "1.0.0",
-    		"model-name": "abb.eam.component.transportation.bus-tyre.json"
-      },
       "componentId": "TYRE32876578423",
       "componentDescription": "Bus Tyre",
       "parentAssetId": "AS349221",
@@ -72,10 +52,6 @@
       "assets": []
     },
     {
-      "model-metadata": {
-    		"model-version": "1.0.0",
-    		"model-name": "abb.eam.component.transportation.bus-tyre.json"
-      },
       "componentId": "TYRE5687966798",
       "componentDescription": "Bus Tyre",
       "parentAssetId": "AS349221",
@@ -91,10 +67,6 @@
       "assets": []
     },
     {
-      "model-metadata": {
-    		"model-version": "1.0.0",
-    		"model-name": "abb.eam.component.transportation.bus-tyre.json"
-      },
       "componentId": "TYRE43095394067",
       "componentDescription": "Bus Tyre",
       "parentAssetId": "AS349221",
@@ -110,10 +82,6 @@
       "assets": []
     },
     {
-      "model-metadata": {
-    		"model-version": "1.0.0",
-    		"model-name": "abb.eam.component.transportation.bus-tyre.json"
-      },
       "componentId": "TYRE2385734687394",
       "componentDescription": "Bus Tyre",
       "parentAssetId": "AS349221",
@@ -131,10 +99,6 @@
   ],
   "features": [
     {
-      "model-metadata": {
-    		"model-version": "1.0.0",
-    		"model-name": "abb.eam.feature.json"
-      },
       "featureId": "myFeature123",
       "featureDescription": "Generic Feature",
       "parentAssetId": "myasset123",
@@ -149,10 +113,6 @@
       "assets": []
     },
     {
-      "model-metadata": {
-    		"model-version": "1.0.0",
-    		"model-name": "abb.eam.feature.json"
-      },
       "featureId": "myFeature456",
       "featureDescription": "Generic Feature",
       "parentAssetId": "myasset123",

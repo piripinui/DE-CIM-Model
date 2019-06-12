@@ -1,12 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "abb.eam.feature.json",
+  "$id": "abb.eam.feature-1.0.0.json",
   "title": "Feature Model",
   "description": "The generic definition of a Feature",
-  "model-metadata": {
-    "model-version": "1.0.0",
-    "model-name": "abb.eam.feature.json"
-  },
 
   "type": "object",
   "properties": {
@@ -20,7 +16,7 @@
     },
     "secondaryAttributes": {
       "type": "array",
-      "items": { "$ref": "abb.eam.feature.secondaryattribute.json" },
+      "items": { "$ref": "abb.eam.feature.secondaryattribute-1.0.0.json" },
       "default": [],
       "description": "A set of attributes that can be associated with a Feature"
     },
@@ -30,7 +26,7 @@
     },
     "assets": {
       "type": "array",
-      "items": { "$ref": "abb.eam.asset.json" },
+      "items": { "$ref": "abb.eam.asset-1.0.0.json" },
       "maxItems": 1,
       "default": [],
       "description": "The set of parent Assets associated with this Feature (always only one)"

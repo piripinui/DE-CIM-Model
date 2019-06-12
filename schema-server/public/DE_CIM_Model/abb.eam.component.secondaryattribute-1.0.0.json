@@ -1,14 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "abb.eam.feature.secondaryattribute.json",
+    "$id": "abb.eam.component.secondaryattribute-1.0.0.json",
     "type": "object",
-    "title": "Feature Secondary Attribute Model",
-    "description": "The definition of a Feature's secondary attributes",
-
-    "model-metadata": {
-        "model-version": "1.0.0",
-        "model-name": "abb.eam.feature.secondaryattribute.json"
-    },
+    "title": "Component Secondary Attribute Model",
+    "description": "The definition of a Component's secondary attributes",
 
     "type": "object",
     "properties": {

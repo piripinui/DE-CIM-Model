@@ -1,11 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "abb.eam.workorder.json",
+    "$id": "abb.eam.workorder-1.0.0.json",
     "title": "Work Order Model",
-    "model-metadata": {
-        "model-version": "1.0.0",
-        "model-name": "abb.eam.workorder.json"
-    },
     "description": "The generic description of a Work Order",
 
     "$comment": "Below is the actual definition of Work Order",
@@ -21,7 +17,7 @@
             "type": "string"
         },
         "workOrderStatus": {
-            "$ref": "abb.eam.workorder.statustypes.json"
+            "$ref": "abb.eam.workorder.statustypes-1.0.0.json"
         },
         "workCompleted": {
             "type": "boolean"
@@ -29,7 +25,7 @@
         "secondaryAttributes": {
             "type": "array",
             "items": {
-                "$ref": "abb.eam.workorder.secondaryattribute.json"
+                "$ref": "abb.eam.workorder.secondaryattribute-1.0.0.json"
             },
             "default": []
         },
@@ -39,13 +35,13 @@
         "assets": {
             "type": "array",
             "items": {
-                "$ref": "abb.eam.asset.json"
+                "$ref": "abb.eam.asset-1.0.0.json"
             },
             "maxItems": 1,
             "default": []
         },
         "location": {
-            "$ref": "abb.eam.location.json"
+            "$ref": "abb.eam.location-1.0.0.json"
         }
     },
     "required": [
@@ -54,5 +50,6 @@
         "startDate",
         "workOrderStatus",
         "secondaryAttributes"
-    ]
+    ],
+    "additionalProperties": false
 }

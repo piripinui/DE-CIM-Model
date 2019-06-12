@@ -1,13 +1,5 @@
 {
-  "model-metadata": {
-		"model-version": "1.0.0",
-		"model-name": "abb.eam.assethierarchy.json"
-  },
   "root": {
-      "model-metadata": {
-    		"model-version": "1.0.0",
-    		"model-name": "abb.eam.asset.json"
-      },
       "assetId": "myasset123",
       "assetDescription": "Generic Asset 12345",
       "assetStatus": "Installed",
@@ -31,10 +23,6 @@
         }
       ],
       "location": {
-        "model-metadata": {
-      		"model-version": "1.0.0",
-      		"model-name": "abb.eam.asset.json"
-        },
         "locationId": "L2378462378",
         "geometry": {
           "type": "Point",
@@ -44,10 +32,6 @@
   },
   "subassets": [
     {
-      "model-metadata": {
-    		"model-version": "1.0.0",
-    		"model-name": "abb.eam.asset.json"
-      },
       "assetId": "subasset123",
       "assetDescription": "Generic Sub-Asset 12345",
       "assetStatus": "Installed",
@@ -80,10 +64,6 @@
       ],
       "subcomponents": [
         {
-          "model-metadata": {
-        		"model-version": "1.0.0",
-        		"model-name": "abb.eam.component.json"
-          },
           "componentId": "subcomponent123",
           "componentDescription": "Generic sub-component",
           "parentAssetId": "myasset123",

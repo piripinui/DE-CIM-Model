@@ -1,14 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "abb.eam.asset.criticalitytypes.json",
+    "$id": "abb.eam.asset.criticalitytypes-1.0.0.json",
     "type": "object",
     "title": "Asset Criticality Types Model",
     "description": "The set of valid criticality types for Assets",
-
-    "model-metadata": {
-        "model-version": "1.0.0",
-        "model-name": "abb.eam.asset.criticalitytypes.json"
-    },
 
     "type": "string",
     "enum": [

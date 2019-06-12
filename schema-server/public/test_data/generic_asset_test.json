@@ -1,8 +1,4 @@
 {
-  "model-metadata": {
-		"model-version": "1.0.0",
-		"model-name": "abb.eam.asset.json"
-  },
   "assetId": "DE-myasset123",
   "assetDescription": "Generic Asset 12345",
   "assetStatus": "Under Repair",
@@ -27,10 +23,6 @@
   ],
   "workOrders": [
     {
-      "model-metadata": {
-        "model-version": "1.0.0",
-        "model-name": "abb.eam.workorder.json"
-      },
       "workOrderId": "WO283745636485",
       "workDescription": "Inspect the asset",
       "startDate": "12/05/19",
@@ -46,10 +38,6 @@
       ]
     },
     {
-      "model-metadata": {
-        "model-version": "1.0.0",
-        "model-name": "abb.eam.workorder.json"
-      },
       "workOrderId": "WO283745636485",
       "workDescription": "Fix the asset",
       "startDate": "14/05/19",
@@ -66,10 +54,6 @@
     }
   ],
   "location": {
-    "model-metadata": {
-  		"model-version": "1.0.0",
-  		"model-name": "abb.eam.asset.json"
-    },
     "locationId": "L2378462378",
     "geometry": {
       "type": "Point",
@@ -78,10 +62,6 @@
   },
   "subcomponents": [
     {
-      "model-metadata": {
-    		"model-version": "1.0.0",
-    		"model-name": "abb.eam.component.json"
-      },
       "componentId": "mycomponent123",
       "componentDescription": "Generic component",
       "parentAssetId": "myasset123",
@@ -97,10 +77,6 @@
       "subcomponents": []
     },
     {
-      "model-metadata": {
-    		"model-version": "1.0.0",
-    		"model-name": "abb.eam.component.json"
-      },
       "componentId": "complexcomponent123",
       "componentDescription": "Generic component with a subcomponent",
       "parentAssetId": "myasset123",
@@ -115,10 +91,6 @@
       "assets": [],
       "subcomponents": [
         {
-          "model-metadata": {
-        		"model-version": "1.0.0",
-        		"model-name": "abb.eam.component.json"
-          },
           "componentId": "subcomponent123",
           "componentDescription": "A generic subcomponent with no children",
           "parentAssetId": "myasset123",

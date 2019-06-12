@@ -1,8 +1,4 @@
 {
-  "model-metadata": {
-		"model-version": "1.0.0",
-		"model-name": "abb.eam.asset.utilities.transformer.json"
-  },
   "assetId": "DE-12763571265",
   "assetDescription": "Power Transformer in Big Substation",
   "assetStatus": "Installed",

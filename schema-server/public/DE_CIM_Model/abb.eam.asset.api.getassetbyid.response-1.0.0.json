@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "abb.eam.asset.api.getassetbyid.response-1.0.0.json",
+    "type": "object",
+    "title": "API definition for the response for an Asset given an id",
+
+    "description": "The getassetbyid service returns a JSON document conforming to abb.eam.asset-1.0.0.json",
+
+    "properties": {
+      "result": {
+        "oneOf": [
+          { "$ref": "abb.eam.asset-1.0.0.json" },
+          { "$ref": "abb.eam.asset.api.error-1.0.0.json" }
+        ]
+      }
+    },
+    "required": [
+      "result"
+    ]
+}
