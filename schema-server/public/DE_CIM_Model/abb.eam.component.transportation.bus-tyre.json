@@ -15,7 +15,8 @@
     { "$ref": "abb.eam.component.json" },
     { "properties": {
         "tyreSize": {
-          "type": "integer"
+          "type": "integer",
+          "description": "The tyre size as an integer"
         },
         "tyrePosition": {
           "type": "string",
