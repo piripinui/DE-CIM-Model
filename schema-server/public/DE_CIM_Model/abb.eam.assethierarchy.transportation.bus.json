@@ -6,7 +6,7 @@
     "model-version": "1.0.0",
     "model-name": "abb.eam.assethierachy.transportation.bus.json"
   },
-  "description": "A specific model of the Asset, Component and Feature hierarchy for a bus",
+  "description": "A specific model of the Asset, Component and Feature hierarchy for a bus. It is the same structure as the generic Asset Hierarchy model except that it applies a constraint to the number and type of sub-Components (specifically 4 of type Bus Tyre)",
 
   "$comment": "This is a definition of a bus asset hierarchy with specific constraints on the asset, component types and the number of components that must be provided.",
 
@@ -18,18 +18,22 @@
     "subassets": {
       "type": "array",
       "items": { "$ref": "abb.eam.asset.transportation.bus-engine.json" },
-      "default": []
+      "maxItems": 1,
+      "default": [],
+      "description": "A bus may have a single engine as a sub-Asset"
     },
     "subcomponents": {
       "type": "array",
       "items": { "$ref": "abb.eam.component.transportation.bus-tyre.json" },
       "minItems": 4,
-      "maxItems": 4
+      "maxItems": 4,
+      "description": "A bus may have 4 tyres as subcomponents"
     },
     "features": {
       "type": "array",
       "items": { "$ref": "abb.eam.feature.json" },
-      "default": []
+      "default": [],
+      "description": "A bus may have any number of features of any feature 'type'"
     }
   },
   "requires": [

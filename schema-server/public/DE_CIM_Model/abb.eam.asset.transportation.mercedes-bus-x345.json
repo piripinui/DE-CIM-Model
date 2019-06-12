@@ -6,6 +6,7 @@
     "model-version": "1.0.0",
     "model-name": "abb.eam.asset.transportation.mercedes-bus-x345.json"
   },
+  "description": "This is an example of an Asset definition representing a (fictional) type of Mercedes bus. It derives from the generic Asset definition but adds a 'ModelItemId' property",
 
   "$comment": "A specific model definition for a Mercedes X345 bus",
 

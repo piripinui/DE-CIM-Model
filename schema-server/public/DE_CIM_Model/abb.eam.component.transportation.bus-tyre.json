@@ -7,6 +7,7 @@
     "model-version": "1.0.0",
     "model-name": "abb.eam.component.transportation.bus-tyre.json"
   },
+  "description": "A definition for a bus tyre Component type, associated with the Mercedes Bus Asset type. It derievs from the generic Component definition but adds TyreSize and TyrePosition properties.",
 
   "$comment": "A specific model definition for a bus tyre",
 
