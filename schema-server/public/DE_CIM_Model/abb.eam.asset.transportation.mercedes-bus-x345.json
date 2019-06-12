@@ -14,7 +14,8 @@
     { "$ref": "abb.eam.asset.json" },
     { "properties": {
         "modelItemId": {
-          "type": "string"
+          "type": "string",
+          "description": "The model identifier for a Mercedes bus"
         }
       }
     }

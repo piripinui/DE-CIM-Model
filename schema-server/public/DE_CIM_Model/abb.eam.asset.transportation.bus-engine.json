@@ -15,7 +15,8 @@
     { "properties": {
         "fuelType": {
           "type": "string",
-          "enum": [ "Petrol", "Diesel", "Electric" ]
+          "enum": [ "Petrol", "Diesel", "Electric" ],
+          "description": "The valid fuel types for a bus"
         }
       }
     }

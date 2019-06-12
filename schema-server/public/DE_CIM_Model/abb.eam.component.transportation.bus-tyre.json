@@ -24,7 +24,8 @@
             "Front Left",
             "Back Right",
             "Back Left"
-          ]
+          ],
+          "description": "The four positions for the tyres of the bus"
         }
       }
     }
