@@ -1,0 +1,146 @@
+{
+  "model-metadata": {
+      "model-version": "1.0.0",
+      "model-name": "abb.eam.asset.api.getassetbyid.response.json"
+  },
+
+  "result": {
+    "model-metadata": {
+      "model-version": "1.0.0",
+      "model-name": "abb.eam.asset.json"
+    },
+    "assetId": "DE-myasset123",
+    "assetDescription": "Generic Asset 12345",
+    "assetStatus": "Under Repair",
+    "secondaryAttributes": [
+      {
+        "name": "admsId",
+        "value": "346-43564574",
+        "category": "ADMS",
+        "dataType": "admsId"
+      },
+      {
+        "name": "otherNotes",
+        "value": "Near the brick wall in the substation",
+        "category": "ADMS",
+        "dataType": "string"
+      },
+      {
+        "name": "gisId",
+        "value": "12344534",
+        "dataType": "gisId"
+      }
+    ],
+    "workOrders": [
+      {
+        "model-metadata": {
+          "model-version": "1.0.0",
+          "model-name": "abb.eam.workorder.json"
+        },
+        "workOrderId": "WO283745636485",
+        "workDescription": "Inspect the asset",
+        "startDate": "12/05/19",
+        "workOrderStatus": "Complete",
+        "parentAssetId": "myasset123",
+        "secondaryAttributes": [
+          {
+            "name": "warning",
+            "value": "Beware of the dog",
+            "category": "WFM",
+            "dataType": "string"
+          }
+        ]
+      },
+      {
+        "model-metadata": {
+          "model-version": "1.0.0",
+          "model-name": "abb.eam.workorder.json"
+        },
+        "workOrderId": "WO283745636485",
+        "workDescription": "Fix the asset",
+        "startDate": "14/05/19",
+        "workOrderStatus": "Complete",
+        "parentAssetId": "myasset123",
+        "secondaryAttributes": [
+          {
+            "name": "warning",
+            "value": "Beware of the dog",
+            "category": "WFM",
+            "dataType": "string"
+          }
+        ]
+      }
+    ],
+    "location": {
+      "model-metadata": {
+        "model-version": "1.0.0",
+        "model-name": "abb.eam.asset.json"
+      },
+      "locationId": "L2378462378",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 34.23, -57.56 ]
+      }
+    },
+    "subcomponents": [
+      {
+        "model-metadata": {
+          "model-version": "1.0.0",
+          "model-name": "abb.eam.component.json"
+        },
+        "componentId": "mycomponent123",
+        "componentDescription": "Generic component",
+        "parentAssetId": "myasset123",
+        "secondaryAttributes": [
+          {
+            "name": "colour",
+            "value": "Pink",
+            "category": "Appearance",
+            "dataType": "string"
+          }
+        ],
+        "assets": [],
+        "subcomponents": []
+      },
+      {
+        "model-metadata": {
+          "model-version": "1.0.0",
+          "model-name": "abb.eam.component.json"
+        },
+        "componentId": "complexcomponent123",
+        "componentDescription": "Generic component with a subcomponent",
+        "parentAssetId": "myasset123",
+        "secondaryAttributes": [
+          {
+            "name": "colour",
+            "value": "Pink",
+            "category": "Appearance",
+            "dataType": "string"
+          }
+        ],
+        "assets": [],
+        "subcomponents": [
+          {
+            "model-metadata": {
+              "model-version": "1.0.0",
+              "model-name": "abb.eam.component.json"
+            },
+            "componentId": "subcomponent123",
+            "componentDescription": "A generic subcomponent with no children",
+            "parentAssetId": "myasset123",
+            "secondaryAttributes": [
+              {
+                "name": "colour",
+                "value": "Pink",
+                "category": "Appearance",
+                "dataType": "string"
+              }
+            ],
+            "assets": [],
+            "subcomponents": []
+          }
+        ]
+      }
+    ]
+  }
+}

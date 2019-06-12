@@ -1,0 +1,8 @@
+{
+  "model-metadata": {
+      "model-version": "1.0.0",
+      "model-name": "abb.eam.asset.api.getassetbyid.request.json"
+  },
+
+  "assetId": "DE-137653764"
+}

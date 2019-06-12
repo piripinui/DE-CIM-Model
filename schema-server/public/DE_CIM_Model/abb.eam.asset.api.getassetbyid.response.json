@@ -8,12 +8,15 @@
 
     "model-metadata": {
         "model-version": "1.0.0",
-        "model-name": "abb.eam.asset.api.getasset.request.json"
+        "model-name": "abb.eam.asset.api.getassetbyid.request.json"
     },
 
     "properties": {
       "result": {
-        "$ref": "abb.eam.asset.json"
+        "oneOf": [
+          { "$ref": "abb.eam.asset.json" },
+          { "$ref": "abb.eam.asset.api.error.json" }
+        ]
       }
     },
     "required": [
