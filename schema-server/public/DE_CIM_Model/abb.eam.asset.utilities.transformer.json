@@ -12,20 +12,25 @@
   "allOf": [
     { "$ref": "abb.eam.asset.json" },
     { "properties": {
-        "txtype": {
-          "type": "string",
-          "enum": [
-            "Power Transformer",
-            "Distribution Transformer"
-          ]
-        },
-        "manufacturer": {
-          "type": "string",
-          "enum": [
-            "ABB",
-            "GE",
-            "Siemens"
-          ]
+        "type": {
+          "type": "object",
+          "properties": {
+            "txtype": {
+              "type": "string",
+              "enum": [
+                "Power Transformer",
+                "Distribution Transformer"
+              ]
+            },
+            "manufacturer": {
+              "type": "string",
+              "enum": [
+                "ABB",
+                "GE",
+                "Siemens"
+              ]
+            }
+          }
         }
       }
     }

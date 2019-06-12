@@ -1,7 +1,42 @@
 const Validator = require('jsonschema').Validator,
 Promise = require('promise'),
 fs = require('fs'),
-path = require('path');
+path = require('path'),
+commandLineArgs = require('command-line-args'),
+commandLineUsage = require('command-line-usage');
+
+const optionDefinitions = [
+  { name: 'schemadir', alias: 'd', type: String },
+  { name: 'instancefile', type: String },
+  { name: 'help', type: Boolean}
+],
+options = commandLineArgs(optionDefinitions),
+sections = [
+  {
+    header: 'schema-validator',
+    content: 'Checks a JSON document using a JSON Schema document.'
+  },
+  {
+    header: 'Options',
+    optionList: [
+      {
+        name: 'schemadir',
+        typeLabel: '{underline directory}',
+        description: 'The directory where the schema definition JSON files are.'
+      },
+      {
+        name: 'instancefile',
+        typeLabel: '{underline file}',
+        description: 'The file to validate using the JSON Schema.'
+      },
+      {
+        name: 'help',
+        description: 'Print this usage guide.'
+      }
+    ]
+  }
+],
+usage = commandLineUsage(sections);
 
 var schemas = {},
 validator = new Validator();
@@ -86,11 +121,25 @@ function checkJSONDocument(fileName) {
   })
 }
 
-var promise = new Promise(function(resolve, reject) {
-  loadCIMSchema(process.argv[2], resolve, reject);
-});
+function init() {
+  if (options.help) {
+    console.log(usage);
+  }
+  else {
+    if (options.schemadir && options.instancefile) {
+      var promise = new Promise(function(resolve, reject) {
+        loadCIMSchema(options.schemadir, resolve, reject);
+      });
 
-promise.done(function() {
-  console.log("Schema definitions loading complete.");
-  checkJSONDocument(process.argv[3])
-})
+      promise.done(function() {
+        console.log("Schema definitions loading complete.");
+        checkJSONDocument(options.instancefile);
+      });
+    }
+    else {
+      console.log(usage);
+    }
+  };
+}
+
+init();

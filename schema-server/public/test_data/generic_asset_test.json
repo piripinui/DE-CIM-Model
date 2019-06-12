@@ -3,7 +3,7 @@
 		"model-version": "1.0.0",
 		"model-name": "abb.eam.asset.json"
   },
-  "assetId": "myasset123",
+  "assetId": "DE-myasset123",
   "assetDescription": "Generic Asset 12345",
   "assetStatus": "Under Repair",
   "secondaryAttributes": [
