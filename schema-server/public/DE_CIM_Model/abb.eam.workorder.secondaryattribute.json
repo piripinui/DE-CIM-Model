@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "http://localhost/DE_CIM_Model/abb.eam.workorder.secondaryattribute.json",
+    "$id": "abb.eam.workorder.secondaryattribute.json",
     "type": "object",
     "title": "Work Order Secondary Attribute Model",
 

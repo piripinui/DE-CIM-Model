@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "http://localhost/DE_CIM_Model/abb.eam.asset.json",
+    "$id": "abb.eam.asset.json",
     "type": "object",
     "title": "Asset Model",
 

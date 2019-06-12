@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "http://localhost/DE_CIM_Model/abb.eam.component.secondaryattribute.json",
+    "$id": "abb.eam.component.secondaryattribute.json",
     "type": "object",
     "title": "Component Secondary Attribute Model",
 

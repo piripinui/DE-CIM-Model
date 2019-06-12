@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "http://localhost/DE_CIM_Model/abb.eam.asset.secondaryattribute.json",
+    "$id": "abb.eam.asset.secondaryattribute.json",
     "type": "object",
     "title": "Asset Secondary Attribute Model",
 
