@@ -6,6 +6,7 @@
     "model-version": "1.0.0",
     "model-name": "abb.eam.asset.utilities.transformer.json"
   },
+  "description": "A specific model for Transformers that derives from the generic Asset model. It extends the generic model by adding a 'type' property",
 
   "$comment": "A specific model definition for a Power Transformer that inherits from the generic Asset definition",
 
@@ -14,13 +15,15 @@
     { "properties": {
         "type": {
           "type": "object",
+          "description": "The type of a Transformer is a combination of its manufacturer and type",
           "properties": {
             "txtype": {
               "type": "string",
               "enum": [
                 "Power Transformer",
                 "Distribution Transformer"
-              ]
+              ],
+              "description": "The valid types of transformer"
             },
             "manufacturer": {
               "type": "string",
@@ -28,7 +31,8 @@
                 "ABB",
                 "GE",
                 "Siemens"
-              ]
+              ],
+              "description": "The valid manufacturers of transformers"
             }
           }
         }
