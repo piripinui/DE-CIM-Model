@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "abb.eam.asset.api.getassetbyid.json",
+    "$id": "abb.eam.asset.api.getassetbyid.request.json",
     "type": "object",
     "title": "API definition for request for an Asset given an id",
 
