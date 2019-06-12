@@ -12,7 +12,6 @@
 
     "properties": {
         "assetId": {
-            "description": "The unique identier of the Asset",
             "$ref": "abb.eam.asset.identity.json"
         },
         "assetDescription": {
@@ -20,11 +19,9 @@
             "type": "string"
         },
         "assetStatus": {
-            "description": "The current status of the Asset",
             "$ref": "abb.eam.asset.statustypes.json"
         },
         "assetCriticality": {
-            "description": "The current criticality of the Asset",
             "$ref": "abb.eam.asset.criticalitytypes.json"
         },
         "secondaryAttributes": {
@@ -44,7 +41,6 @@
             }
         },
         "location": {
-            "description": "The point location of the Asset represented by a coordinate",
             "$ref": "abb.eam.location.json"
         },
         "parentAssetId": {
