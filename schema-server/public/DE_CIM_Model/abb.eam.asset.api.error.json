@@ -13,8 +13,10 @@
 
     "properties": {
       "errorCode": {
-        "type": "integer",
-        "errorMessage": "string"
+        "type": "integer"
+      },
+      "errorMessage": {
+        "type": "string"
       }
     },
     "required": [

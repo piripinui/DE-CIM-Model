@@ -1,0 +1,9 @@
+{
+  "model-metadata": {
+      "model-version": "1.0.0",
+      "model-name": "abb.eam.asset.api.error.json"
+  },
+
+  "errorCode": 999,
+  "errorMessage": "Asset could not be found"
+}
