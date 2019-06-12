@@ -13,6 +13,13 @@
   "allOf": [
     { "$ref": "abb.eam.asset.json" },
     { "properties": {
+		"subcomponents": {
+			"type": "array",
+			"items": { "$ref": "abb.eam.component.transportation.bus-tyre.json" },
+			"maxItems": 4,
+			"minItems": 4,
+			"description": "Overrides the default subcomponents property by specifying that there must be exactly 4 Components of type Bus Tyre"
+		},
         "modelItemId": {
           "type": "string",
           "description": "The model identifier for a Mercedes bus"

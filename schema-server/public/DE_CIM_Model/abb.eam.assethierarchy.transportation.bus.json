@@ -10,33 +10,39 @@
 
   "$comment": "This is a definition of a bus asset hierarchy with specific constraints on the asset, component types and the number of components that must be provided.",
 
-  "type": "object",
-  "properties": {
-    "root": {
-      "$ref": "abb.eam.asset.transportation.mercedes-bus-x345.json"
-    },
-    "subassets": {
-      "type": "array",
-      "items": { "$ref": "abb.eam.asset.transportation.bus-engine.json" },
-      "maxItems": 1,
-      "default": [],
-      "description": "A bus may have a single engine as a sub-Asset"
-    },
-    "subcomponents": {
-      "type": "array",
-      "items": { "$ref": "abb.eam.component.transportation.bus-tyre.json" },
-      "minItems": 4,
-      "maxItems": 4,
-      "description": "A bus may have 4 tyres as subcomponents"
-    },
-    "features": {
-      "type": "array",
-      "items": { "$ref": "abb.eam.feature.json" },
-      "default": [],
-      "description": "A bus may have any number of features of any feature 'type'"
-    }
-  },
-  "requires": [
-    "root", "subassets", "subcomponents", "features"
+  "allOf": [
+  	{ "$ref": "abb.eam.assethierarchy.json" },
+  	{
+  	  "type": "object",
+  	  "description": "Overrides of default Asset Hierarchy",
+	  "properties": {
+		"root": {
+		  "$ref": "abb.eam.asset.transportation.mercedes-bus-x345.json"
+		},
+		"subassets": {
+		  "type": "array",
+		  "items": { "$ref": "abb.eam.asset.transportation.bus-engine.json" },
+		  "maxItems": 1,
+		  "default": [],
+		  "description": "A bus may have a single engine as a sub-Asset"
+		},
+		"subcomponents": {
+		  "type": "array",
+		  "items": { "$ref": "abb.eam.component.transportation.bus-tyre.json" },
+		  "minItems": 4,
+		  "maxItems": 4,
+		  "description": "A bus may have 4 tyres as subcomponents"
+		},
+		"features": {
+		  "type": "array",
+		  "items": { "$ref": "abb.eam.feature.json" },
+		  "default": [],
+		  "description": "A bus may have any number of features of any feature 'type'"
+		}
+	  },
+	  "requires": [
+		"root", "subassets", "subcomponents", "features"
+	  ]
+  	}
   ]
 }

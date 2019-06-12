@@ -1,9 +1,9 @@
 {
   "model-metadata": {
 		"model-version": "1.0.0",
-		"model-name": "abb.eam.transportation.mercedes-bus-x345.json"
+		"model-name": "abb.eam.asset.transportation.mercedes-bus-x345.json"
   },
-  "assetId": "AS349221",
+  "assetId": "DE-AS349221",
   "assetDescription": "Mercedes Bus X345",
   "assetStatus": "Active",
   "currentLocation": {
@@ -24,5 +24,22 @@
       "category": "BUS",
       "dataType": "string"
     }
-  ]
+  ],
+  "subcomponents": [
+	{
+	  "componentId": "TYRE32876578423",
+	  "componentDescription": "Bus Tyre",
+	  "parentAssetId": "AS349221",
+	  "tyreSize": 48,
+	  "secondaryAttributes": [
+		{
+		  "name": "manufacturer",
+		  "value": "Kumho",
+		  "category": "TYRES",
+		  "dataType": "string"
+		}
+	  ],
+	  "assets": []
+	}
+	]
 }
