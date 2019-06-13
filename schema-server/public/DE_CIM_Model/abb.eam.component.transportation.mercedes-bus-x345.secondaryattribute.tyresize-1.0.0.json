@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "abb.eam.component.transportation.mercedes-bus-x345.secondaryattribute.tyresize-1.0.0.json",
+  "title": "Mercedes Bus X345 tyre size secondary attribute definition",
+  "description": "Model item definition for a Mercedes X345 bus",
+
+  "type": "object",
+  "properties": {
+      "name": {
+          "type": "string",
+          "enum": [
+            "tyresize"
+          ],
+          "description": "The key used for models is always 'tyresize'"
+      },
+      "value": {
+          "type": "object",
+          "properties": {
+            "tyresize": {
+              "type": "integer"
+            }
+          },
+          "description": "The tyre size value is an integer"
+      },
+      "category": {
+          "type": "string",
+          "description": "This is the optional category that the attribute may fit in e.g. from a particular system or of a particular type"
+      },
+      "dataType": {
+          "type": "string",
+          "enum": [
+            "abb.eam.component.transportation.mercedes-bus-x345.secondaryattribute.tyresize-1.0.0.json"
+          ],
+          "description": "For bus tyre size component types we always use this schema's name"
+      }
+  },
+  "required": [
+    "name", "value", "dataType"
+  ]
+}

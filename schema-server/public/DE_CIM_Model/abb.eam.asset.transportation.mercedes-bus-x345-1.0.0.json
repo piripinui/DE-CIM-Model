@@ -9,16 +9,19 @@
   "allOf": [
     { "$ref": "abb.eam.asset-1.0.0.json" },
     { "properties": {
-		"subcomponents": {
-			"type": "array",
-			"items": { "$ref": "abb.eam.component.transportation.bus-tyre-1.0.0.json" },
-			"maxItems": 4,
-			"minItems": 4,
-			"description": "Overrides the default subcomponents property by specifying that there must be exactly 4 Components of type Bus Tyre"
-		},
-        "modelItemId": {
-          "type": "string",
-          "description": "The model identifier for a Mercedes bus"
+    		"subcomponents": {
+    			"type": "array",
+    			"items": { "$ref": "abb.eam.component.transportation.bus-tyre-1.0.0.json" },
+    			"maxItems": 4,
+    			"minItems": 4,
+    			"description": "Overrides the default subcomponents property by specifying that there must be exactly 4 Components of type Bus Tyre"
+    		},
+        "secondaryAttributes": {
+          "description": "A set of specific attributes specific to a Mercedes Bus",
+          "type": "array",
+          "items": [
+              { "$ref": "abb.eam.asset.transportation.mercedes-bus-x345.secondaryattribute.modelitemid-1.0.0.json" }
+          ]
         }
       }
     }

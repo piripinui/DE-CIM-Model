@@ -2,7 +2,7 @@
   "assetId": "DE-AS349221",
   "assetDescription": "Mercedes Bus X345",
   "assetStatus": "Active",
-  "currentLocation": {
+  "location": {
     "locationId": "L2378462378",
     "geometry": {
       "type": "Point",
@@ -11,27 +11,106 @@
   },
   "secondaryAttributes": [
     {
-      "name": "modeItemId",
-      "value": "10001",
+      "name": "modelItemId",
+      "value": {
+        "modelid": "10001"
+      },
       "category": "BUS",
-      "dataType": "string"
+      "dataType": "abb.eam.asset.transportation.mercedes-bus-x345.secondaryattribute.modelitemid-1.0.0.json"
     }
   ],
   "subcomponents": [
-	{
-	  "componentId": "TYRE32876578423",
-	  "componentDescription": "Bus Tyre",
-	  "parentAssetId": "AS349221",
-	  "tyreSize": 48,
-	  "secondaryAttributes": [
-		{
-		  "name": "manufacturer",
-		  "value": "Kumho",
-		  "category": "TYRES",
-		  "dataType": "string"
-		}
-	  ],
-	  "assets": []
-	}
-	]
+	   {
+    	  "componentId": "TYRE32876578423",
+    	  "componentDescription": "Bus Tyre",
+    	  "parentAssetId": "AS349221",
+    	  "secondaryAttributes": [
+      		{
+      		  "name": "tyresize",
+      		  "value": {
+              "tyresize": 48
+            },
+      		  "category": "TYRES",
+      		  "dataType": "abb.eam.component.transportation.mercedes-bus-x345.secondaryattribute.tyresize-1.0.0.json"
+      		},
+          {
+      		  "name": "tyreposition",
+      		  "value": {
+              "tyreposition": "Front Right"
+            },
+      		  "category": "TYRES",
+      		  "dataType": "abb.eam.component.transportation.mercedes-bus-x345.secondaryattribute.tyreposition-1.0.0.json"
+      		}
+        ]
+      },
+      {
+     	  "componentId": "TYRE32876578423",
+     	  "componentDescription": "Bus Tyre",
+     	  "parentAssetId": "AS349221",
+     	  "secondaryAttributes": [
+       		{
+       		  "name": "tyresize",
+       		  "value": {
+               "tyresize": 48
+             },
+       		  "category": "TYRES",
+       		  "dataType": "abb.eam.component.transportation.mercedes-bus-x345.secondaryattribute.tyresize-1.0.0.json"
+       		},
+           {
+       		  "name": "tyreposition",
+       		  "value": {
+               "tyreposition": "Front Left"
+             },
+       		  "category": "TYRES",
+       		  "dataType": "abb.eam.component.transportation.mercedes-bus-x345.secondaryattribute.tyreposition-1.0.0.json"
+       		}
+         ]
+       },
+       {
+      	  "componentId": "TYRE32876578423",
+      	  "componentDescription": "Bus Tyre",
+      	  "parentAssetId": "AS349221",
+      	  "secondaryAttributes": [
+        		{
+        		  "name": "tyresize",
+        		  "value": {
+                "tyresize": 52
+              },
+        		  "category": "TYRES",
+        		  "dataType": "abb.eam.component.transportation.mercedes-bus-x345.secondaryattribute.tyresize-1.0.0.json"
+        		},
+            {
+        		  "name": "tyreposition",
+        		  "value": {
+                "tyreposition": "Back Left"
+              },
+        		  "category": "TYRES",
+        		  "dataType": "abb.eam.component.transportation.mercedes-bus-x345.secondaryattribute.tyreposition-1.0.0.json"
+        		}
+          ]
+        },
+        {
+       	  "componentId": "TYRE32876578423",
+       	  "componentDescription": "Bus Tyre",
+       	  "parentAssetId": "AS349221",
+       	  "secondaryAttributes": [
+         		{
+         		  "name": "tyresize",
+         		  "value": {
+                 "tyresize": 52
+               },
+         		  "category": "TYRES",
+         		  "dataType": "abb.eam.component.transportation.mercedes-bus-x345.secondaryattribute.tyresize-1.0.0.json"
+         		},
+             {
+         		  "name": "tyreposition",
+         		  "value": {
+                 "tyreposition": "Back Left"
+               },
+         		  "category": "TYRES",
+         		  "dataType": "abb.eam.component.transportation.mercedes-bus-x345.secondaryattribute.tyreposition-1.0.0.json"
+         		}
+           ]
+         }
+	 ]
 }

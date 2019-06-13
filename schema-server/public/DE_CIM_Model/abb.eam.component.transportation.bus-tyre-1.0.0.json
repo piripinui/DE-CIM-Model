@@ -10,19 +10,13 @@
   "allOf": [
     { "$ref": "abb.eam.component-1.0.0.json" },
     { "properties": {
-        "tyreSize": {
-          "type": "integer",
-          "description": "The tyre size as an integer"
-        },
-        "tyrePosition": {
-          "type": "string",
-          "enum": [
-            "Front Right",
-            "Front Left",
-            "Back Right",
-            "Back Left"
-          ],
-          "description": "The four positions for the tyres of the bus"
+        "secondaryAttributes": {
+          "description": "A set of specific attributes specific to a Mercedes Bus Component",
+          "type": "array",
+          "items": [
+              { "$ref": "abb.eam.component.transportation.mercedes-bus-x345.secondaryattribute.tyresize-1.0.0.json" },
+              { "$ref": "abb.eam.component.transportation.mercedes-bus-x345.secondaryattribute.tyreposition-1.0.0.json" }
+          ]
         }
       }
     }
