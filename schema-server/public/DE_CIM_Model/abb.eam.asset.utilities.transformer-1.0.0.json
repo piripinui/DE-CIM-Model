@@ -2,35 +2,20 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "abb.eam.asset.utilities.transformer-1.0.0.json",
   "title": "Transformer Model",
-  "description": "A specific model for Transformers that derives from the generic Asset model. It extends the generic model by adding a 'type' property",
+  "description": "A specific model for Transformers that derives from the generic Asset model. It extends the generic model by enforcing a 'type' object in the secondary attributes.",
 
-  "$comment": "A specific model definition for a Power Transformer that inherits from the generic Asset definition",
+  "$comment": "A Transformer must have as its first secondary attribute an object that conforms to the secondary attribute model and as its secondary a rating value. After that, any other data may be added.",
 
   "allOf": [
     { "$ref": "abb.eam.asset-1.0.0.json" },
     { "properties": {
-        "type": {
-          "type": "object",
-          "description": "The type of a Transformer is a combination of its manufacturer and type",
-          "properties": {
-            "txtype": {
-              "type": "string",
-              "enum": [
-                "Power Transformer",
-                "Distribution Transformer"
-              ],
-              "description": "The valid types of transformer"
-            },
-            "manufacturer": {
-              "type": "string",
-              "enum": [
-                "ABB",
-                "GE",
-                "Siemens"
-              ],
-              "description": "The valid manufacturers of transformers"
-            }
-          }
+        "secondaryAttributes": {
+          "description": "A set of specific attributes specific to Transformers",
+          "type": "array",
+          "items": [
+              { "$ref": "abb.eam.asset.utilities.transformer.secondaryattribute.txtype-1.0.0.json" },
+              { "$ref": "abb.eam.asset.utilities.transformer.secondaryattribute.txrating-1.0.0.json" }
+          ]
         }
       }
     }

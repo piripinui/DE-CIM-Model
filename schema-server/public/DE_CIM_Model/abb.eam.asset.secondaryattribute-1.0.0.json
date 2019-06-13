@@ -12,8 +12,8 @@
             "description": "This is the key of the secondary attribute used for lookup"
         },
         "value": {
-            "type": "string",
-            "description": "This is the actual value of the secondary attribute"
+            "type": "object",
+            "description": "The actual value of the secondary attributeas a JSON object"
         },
         "category": {
             "type": "string",
@@ -21,7 +21,7 @@
         },
         "dataType": {
             "type": "string",
-            "description": "This is the optional data type of the value i.e. a cue on how to interpret the value"
+            "description": "This is the optional data type of the value which can be null or a reference to a model schema"
         }
     },
     "required": [

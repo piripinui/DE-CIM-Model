@@ -5,19 +5,25 @@
   "secondaryAttributes": [
     {
       "name": "admsId",
-      "value": "346-43564574",
+      "value": {
+        "id": "346-43564574"
+      },
       "category": "ADMS",
       "dataType": "admsId"
     },
     {
       "name": "otherNotes",
-      "value": "Near the brick wall in the substation",
+      "value": {
+        "val": "Near the brick wall in the substation"
+      },
       "category": "ADMS",
       "dataType": "string"
     },
     {
       "name": "gisId",
-      "value": "12344534",
+      "value": {
+        "id": "12344534"
+      },
       "dataType": "gisId"
     }
   ],

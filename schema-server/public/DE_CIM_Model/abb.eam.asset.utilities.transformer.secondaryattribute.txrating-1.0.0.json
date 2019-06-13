@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "abb.eam.asset.utilities.transformer.secondaryattribute.txrating-1.0.0.json",
+  "title": "Transformer Rating Model",
+  "description": "A specific model the rating of a secondary attribute",
+
+  "$comment": "This schema defines the object model for a transformer rating property",
+
+  "type": "object",
+  "properties": {
+      "name": {
+          "type": "string",
+          "enum": [
+            "txrating"
+          ],
+          "description": "This is the key used for transformer ratings"
+      },
+      "value": {
+          "type": "object",
+          "properties": {
+            "rating": {
+              "enum": [
+                "315 kVA"
+              ]
+            }
+          },
+          "description": "An enumerated list of valid transformer rating values"
+      },
+      "category": {
+          "type": "string",
+          "description": "This is the optional category that the attribute may fit in e.g. from a particular system or of a particular type"
+      },
+      "dataType": {
+          "type": "string",
+          "enum": [
+            "abb.eam.asset.utilities.transformer.secondaryattribute.txrating-1.0.0.json"
+          ],
+          "description": "This is the optional data type of the value which can be null or a reference to a model schema"
+      }
+  },
+  "required": [
+    "name", "value", "dataType"
+  ]
+}
