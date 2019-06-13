@@ -13,7 +13,7 @@
           "enum": [
             "txtype"
           ],
-          "description": "This is the key used for transformer types"
+          "description": "The key used for transformer types is always 'txtype'"
       },
       "value": {
           "type": "object",
@@ -29,7 +29,7 @@
               ]
             }
           },
-          "description": "The actual value of the secondary attributeas a JSON object"
+          "description": "The TX type is a combination of manufacturer and physical type of TX"
       },
       "category": {
           "type": "string",
@@ -40,7 +40,7 @@
           "enum": [
             "abb.eam.asset.utilities.transformer.secondaryattribute.txtype-1.0.0.json"
           ],
-          "description": "This is the optional data type of the value which can be null or a reference to a model schema"
+          "description": "For TX types we always use this schema's name"
       }
   },
   "required": [
