@@ -72,5 +72,6 @@
         "assetDescription",
         "assetStatus",
         "secondaryAttributes"
-    ]
+    ],
+    "additionalProperties": false
 }

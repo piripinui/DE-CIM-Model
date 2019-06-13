@@ -42,5 +42,6 @@
   },
   "required": [
     "componentId", "componentDescription", "secondaryAttributes"
-  ]
+  ],
+  "additionalProperties": false
 }

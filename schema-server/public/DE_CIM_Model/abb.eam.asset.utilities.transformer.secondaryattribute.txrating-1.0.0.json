@@ -35,7 +35,7 @@
           "enum": [
             "abb.eam.asset.utilities.transformer.secondaryattribute.txrating-1.0.0.json"
           ],
-          "description": "This is the optional data type of the value which can be null or a reference to a model schema"
+          "description": "For TX types we always use this schema's name"
       }
   },
   "required": [
