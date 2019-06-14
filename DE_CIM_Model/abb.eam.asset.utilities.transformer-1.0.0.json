@@ -2,19 +2,19 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "abb.eam.asset.utilities.transformer-1.0.0.json",
   "title": "Transformer Model",
-  "description": "A specific model for Transformers that derives from the generic Asset model. It extends the generic model by enforcing a 'type' object in the secondary attributes.",
+  "description": "A specific model for Transformers that derives from the generic Asset model. It extends the generic model by enforcing a 'type' object in the industry attributes.",
 
-  "$comment": "A Transformer must have as its first secondary attribute an object that conforms to the secondary attribute model and as its secondary a rating value. After that, any other data may be added.",
+  "$comment": "A Transformer must have as its first industry attribute an object that conforms to the transformer type and as its second a rating value. After that, any other data may be added so long as is matches the generic asset industry attribute model.",
 
   "allOf": [
     { "$ref": "abb.eam.asset-1.0.0.json" },
     { "properties": {
-        "secondaryAttributes": {
+        "industryAttributes": {
           "description": "A set of specific attributes specific to Transformers",
           "type": "array",
           "items": [
-              { "$ref": "abb.eam.asset.utilities.transformer.secondaryattribute.txtype-1.0.0.json" },
-              { "$ref": "abb.eam.asset.utilities.transformer.secondaryattribute.txrating-1.0.0.json" }
+              { "$ref": "abb.eam.asset.utilities.transformer.industryattribute.txtype-1.0.0.json" },
+              { "$ref": "abb.eam.asset.utilities.transformer.industryattribute.txrating-1.0.0.json" }
           ]
         }
       }

@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "abb.eam.asset.utilities.circuitbreaker.industryattribute.all-1.0.0.json",
+  "title": "The model for all industry attributes of a Circuit Breaker",
+  "description": "Defines all industry attributes of a Circuit Breaker in one place",
+
+  "type": "object",
+  "properties": {
+      "type": {
+        "type": "object",
+        "properties": {
+          "manufacturer": {
+            "enum": [
+              "ABB", "Siemens"
+            ]
+          },
+          "model": {
+            "enum": [
+              "Emax 2", "Tmax T", "Tmax 2"
+            ]
+          }
+        }
+      },
+      "installationDate": {
+        "type": "string"
+      }
+  },
+  "required": [
+    "type", "installationDate"
+  ]
+}

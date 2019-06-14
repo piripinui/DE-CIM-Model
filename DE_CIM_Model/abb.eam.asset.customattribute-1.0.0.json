@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "abb.eam.asset.customattribute-1.0.0.json",
+    "type": "object",
+    "title": "Asset Custom Attribute Model",
+    "description": "A set of attributes for Assets that can be added in an ad-hoc manner",
+
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "This is the key of the custom attribute used for lookup"
+        },
+        "value": {
+            "type": "object",
+            "description": "The actual value of the custom attributeas a JSON object"
+        },
+        "category": {
+            "type": "string",
+            "description": "This is the optional category that the attribute may fit in e.g. from a particular system or of a particular type"
+        },
+        "dataType": {
+            "type": "string",
+            "description": "This is the optional data type of the value which can be null or a reference to a model schema"
+        }
+    },
+    "required": [
+        "name",
+        "value"
+    ]
+}

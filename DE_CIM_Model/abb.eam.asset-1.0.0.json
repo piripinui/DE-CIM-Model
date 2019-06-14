@@ -19,12 +19,20 @@
         "assetCriticality": {
             "$ref": "abb.eam.asset.criticalitytypes-1.0.0.json"
         },
-        "secondaryAttributes": {
+        "industryAttributes": {
+          "description": "A set of additional attributes associated with a specific asset class used in a given industry e.g. transformers, buses etc",
+          "type": "array",
+          "default": [],
+          "items": {
+              "$ref": "abb.eam.asset.industryattribute-1.0.0.json"
+          }
+        },
+        "customAttributes": {
             "description": "A set of additional attributes associated with the Asset",
             "type": "array",
             "default": [],
             "items": {
-                "$ref": "abb.eam.asset.secondaryattribute-1.0.0.json"
+                "$ref": "abb.eam.asset.customattribute-1.0.0.json"
             }
         },
         "workOrders": {
@@ -71,7 +79,8 @@
         "assetId",
         "assetDescription",
         "assetStatus",
-        "secondaryAttributes"
+        "industryAttributes",
+        "customAttributes"
     ],
     "additionalProperties": false
 }

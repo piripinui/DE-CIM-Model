@@ -1,19 +1,19 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
-    "$id": "abb.eam.asset.secondaryattribute-1.0.0.json",
+    "$id": "abb.eam.asset.industryattribute-1.0.0.json",
     "type": "object",
-    "title": "Asset Secondary Attribute Model",
-    "description": "A set of attributes for Assets that can be added in an ad-hoc manner",
+    "title": "Asset Industry Attribute Model",
+    "description": "A set of attributes for Assets that describe specific properties of a real asset used in given industries e.g. transformers, bueses etc",
 
     "type": "object",
     "properties": {
         "name": {
             "type": "string",
-            "description": "This is the key of the secondary attribute used for lookup"
+            "description": "This is the key of the custom attribute used for lookup"
         },
         "value": {
             "type": "object",
-            "description": "The actual value of the secondary attributeas a JSON object"
+            "description": "The actual value of the custom attributeas a JSON object"
         },
         "category": {
             "type": "string",

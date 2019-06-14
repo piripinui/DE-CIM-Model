@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "abb.eam.asset.utilities.transformer.industryattribute.txtype-1.0.0.json",
+  "title": "Transformer Type Model",
+  "description": "A specific model the TX type as an industry attribute",
+
+  "$comment": "This schema defines the object model for a transformer type",
+
+  "type": "object",
+  "properties": {
+      "txtype": {
+          "type": "object",
+          "properties": {
+            "txtype": {
+              "enum": [
+                "Power Transformer", "Distribution Transformer"
+              ]
+            },
+            "manufacturer": {
+              "enum": [
+                "ABB", "GE", "Siemens"
+              ]
+            }
+          },
+          "description": "The TX type is a combination of manufacturer and physical type of TX"
+      }
+  },
+  "required": [
+    "name", "value", "dataType"
+  ]
+}

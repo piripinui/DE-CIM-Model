@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "abb.eam.asset.utilities.transformer.industryattribute.txrating-1.0.0.json",
+  "title": "Transformer Rating Model",
+  "description": "Defines transformer rating as an industry attribute",
+
+  "$comment": "This schema defines the object model for a transformer rating property",
+
+  "type": "object",
+  "properties": {
+      "txrating": {
+          "type": "object",
+          "properties": {
+            "rating": {
+              "enum": [
+                "110 kVA",
+                "200 kVA",
+                "315 kVA",
+                "400 kVA"
+              ]
+            }
+          },
+          "description": "An enumerated list of valid transformer rating values"
+      }
+  },
+  "required": [
+    "name", "value", "dataType"
+  ]
+}
