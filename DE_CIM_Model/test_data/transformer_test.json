@@ -16,13 +16,17 @@
   "customAttributes": [
     {
       "name": "admsId",
-      "value": "TX-P-3247",
+      "value": {
+        "id": "TX-P-3247"
+      },
       "category": "ADMS",
       "dataType": "admsId"
     },
     {
       "name": "gisId",
-      "value": "TX-3478564378",
+      "value": {
+        "id": "TX-3478564378"
+      },
       "dataType": "gisId"
     }
   ],
@@ -32,7 +36,7 @@
       "workDescription": "Inspect the transformer's gas",
       "startDate": "12/05/19",
       "workOrderStatus": "Complete",
-      "assetId": "TX12763571265",
+      "parentAssetId": "TX12763571265",
       "secondaryAttributes": [
         {
           "name": "warning",
@@ -47,7 +51,7 @@
       "workDescription": "Fix the transformer",
       "startDate": "14/05/19",
       "workOrderStatus": "Complete",
-      "assetId": "TX12763571265",
+      "parentAssetId": "TX12763571265",
       "secondaryAttributes": [
         {
           "name": "warning",
