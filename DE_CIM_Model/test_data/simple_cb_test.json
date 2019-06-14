@@ -1,0 +1,38 @@
+{
+  "assetId": "DE-CB218746283746238",
+  "assetDescription": "Circuit Breaker in Big Substation",
+  "assetStatus": "Installed",
+  "industryAttributes": [
+    {
+      "type": {
+        "manufacturer": "ABB",
+        "type": "Emax 2"
+      },
+      "installationDate": "01/01/99"
+    }
+  ],
+  "customAttributes": [
+    {
+      "name": "admsId",
+      "value": {
+        "id": "CB-G-372846"
+      },
+      "category": "ADMS",
+      "dataType": "admsId"
+    },
+    {
+      "name": "gisId",
+      "value": {
+        "id": "G948367549876"
+      },
+      "dataType": "gisId"
+    }
+  ],
+  "location": {
+    "locationId": "L2378462378",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [ 34.23, -57.56 ]
+    }
+  }
+}
