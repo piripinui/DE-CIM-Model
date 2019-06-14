@@ -58,7 +58,7 @@
                 "$ref": "abb.eam.asset-1.0.0.json"
             }
         },
-        "subcomponents": {
+        "components": {
             "description": "This Asset's sub-components (if any)",
             "type": "array",
             "default": [],
@@ -66,7 +66,7 @@
                 "$ref": "abb.eam.component-1.0.0.json"
             }
         },
-        "components": {
+        "features": {
             "description": "This Asset's features (if any)",
             "type": "array",
             "default": [],
