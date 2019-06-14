@@ -8,22 +8,17 @@
 
   "type": "object",
   "properties": {
-      "txrating": {
-          "type": "object",
-          "properties": {
-            "rating": {
-              "enum": [
-                "110 kVA",
-                "200 kVA",
-                "315 kVA",
-                "400 kVA"
-              ]
-            }
-          },
-          "description": "An enumerated list of valid transformer rating values"
+    "txrating": {
+        "enum": [
+          "110 kVA",
+          "200 kVA",
+          "315 kVA",
+          "400 kVA"
+        ],
+        "description": "An enumerated list of valid transformer rating values"
       }
   },
   "required": [
-    "name", "value", "dataType"
+    "txrating"
   ]
 }

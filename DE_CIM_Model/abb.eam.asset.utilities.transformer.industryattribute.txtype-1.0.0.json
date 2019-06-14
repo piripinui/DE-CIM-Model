@@ -11,7 +11,7 @@
       "txtype": {
           "type": "object",
           "properties": {
-            "txtype": {
+            "type": {
               "enum": [
                 "Power Transformer", "Distribution Transformer"
               ]
@@ -26,6 +26,6 @@
       }
   },
   "required": [
-    "name", "value", "dataType"
+    "txtype"
   ]
 }

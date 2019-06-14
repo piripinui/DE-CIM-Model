@@ -1,35 +1,33 @@
 {
-  "assetId": "DE-12763571265",
+  "assetId": "DE-TX12763571265",
   "assetDescription": "Power Transformer in Big Substation",
   "assetStatus": "Installed",
-  "secondaryAttributes": [
+  "industryAttributes": [
     {
-      "name": "txtype",
-      "value": {
-        "txtype": "Power Transformer",
-        "manufacturer": "ABB"
-      },
-      "dataType": "abb.eam.asset.utilities.transformer.secondaryattribute.txtype-1.0.0.json"
+      "txtype": {
+        "manufacturer": "ABB",
+        "type": "Power Transformer"
+      }
     },
     {
-      "name": "txrating",
-      "value": {
-        "rating": "315 kVA"
-      },
-      "dataType": "abb.eam.asset.utilities.transformer.secondaryattribute.txrating-1.0.0.json"
-    },
+      "txrating": "315 kVA"
+    }
+  ],
+  "customAttributes": [
     {
       "name": "admsId",
       "value": {
-        "id": "TX-P-3247"
+        "admsId": "TX-P-3247"
       },
-      "category": "ADMS"
+      "category": "ADMS",
+      "dataType": "admsId"
     },
     {
       "name": "gisId",
       "value": {
-        "id": "TX-3478564378"
-      }
+        "gisId": "TX-3478564378"
+      },
+      "dataType": "gisId"
     }
   ],
   "location": {

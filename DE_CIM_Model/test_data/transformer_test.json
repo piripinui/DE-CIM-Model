@@ -2,11 +2,18 @@
   "assetId": "DE-TX12763571265",
   "assetDescription": "Power Transformer in Big Substation",
   "assetStatus": "Installed",
-  "type": {
-    "txtype": "Power Transformer",
-    "manufacturer": "ABB"
-  },
-  "secondaryAttributes": [
+  "industryAttributes": [
+    {
+      "txtype": {
+        "manufacturer": "ABB",
+        "type": "Power Transformer"
+      }
+    },
+    {
+      "txrating": "315 kVA"
+    }
+  ],
+  "customAttributes": [
     {
       "name": "admsId",
       "value": "TX-P-3247",
