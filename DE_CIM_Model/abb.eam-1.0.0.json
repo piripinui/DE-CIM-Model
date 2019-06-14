@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "abb.eam-1.0.0.json",
+  "title": "The EAM information model",
+  "description": "The complete information model for EAM",
+
+  "type": "object",
+  "properties": {
+    "asset": {
+      "$ref": "abb.eam.asset-1.0.0.json"
+    },
+    "workorder": {
+      "$ref": "abb.eam.workorder-1.0.0.json"
+    },
+    "component": {
+      "$ref": "abb.eam.component-1.0.0.json"
+    },
+    "feature": {
+      "$ref": "abb.eam.feature.json"
+    }
+  }
+}
