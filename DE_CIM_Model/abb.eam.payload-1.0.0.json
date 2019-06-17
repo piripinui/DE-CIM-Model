@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "abb.eam.asset.customattribute-1.0.0.json",
+    "type": "object",
+    "title": "Asset Custom Attribute Model",
+    "description": "A set of attributes for Assets that can be added in an ad-hoc manner",
+
+    "properties": {
+        "attributes": {
+            "description": "A set of additional attributes associated with a specific asset class used in a given industry e.g. transformers, buses etc",
+            "type": "array",
+            "default": [],
+            "items": {
+                "$ref": "abb.eam.asset.industryattribute-1.0.0.json"
+            }
+        },
+        "data": {
+            "description": "Any json objct specified by the customer",
+            "type": "object",
+            "default": {}
+        }
+    },
+    
+    "oneOf": [
+        { "required": ["attributes"] },
+        { "required": ["data"] }
+    ],
+
+    "additionalProperties": false
+}

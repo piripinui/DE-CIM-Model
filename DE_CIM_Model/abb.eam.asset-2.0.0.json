@@ -1,0 +1,86 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "abb.eam.asset-2.0.0.json",
+    "type": "object",
+    "title": "Asset Model",
+    "description": "The generic description of an Asset",
+
+    "properties": {
+        "assetId": {
+            "$ref": "abb.eam.asset.identity-1.0.0.json"
+        },
+        "assetDescription": {
+            "description": "An informal description of the Asset",
+            "type": "string"
+        },
+        "assetStatus": {
+            "$ref": "abb.eam.asset.statustypes-1.0.0.json"
+        },
+        "assetCriticality": {
+            "$ref": "abb.eam.asset.criticalitytypes-1.0.0.json"
+        },
+        "industryData": {
+          "description": "A set of additional attributes associated with a specific asset class used in a given industry e.g. transformers, buses etc",
+          "type": "object",
+          "default": {},
+          "data": {
+              "$ref": "abb.eam.payload-1.0.0.json"
+          }
+        },
+        "customData": {
+            "description": "A set of additional attributes associated with the Asset",
+            "type": "object",
+            "default": {},
+            "data": {
+                "$ref": "abb.eam.payload-1.0.0.json"
+            }
+        },
+        "workOrders": {
+            "description": "Work Orders that are associated with this Asset",
+            "type": "array",
+            "default": [],
+            "items": {
+                "$ref": "abb.eam.workorder-1.0.0.json"
+            }
+        },
+        "location": {
+            "$ref": "abb.eam.location-1.0.0.json"
+        },
+        "parentAssetId": {
+            "description": "This Asset's parent Asset (if any)",
+            "type": "string"
+        },
+        "subassets": {
+            "description": "This Asset's child Assets (if any)",
+            "type": "array",
+            "default": [],
+            "items": {
+                "$ref": "abb.eam.asset-1.0.0.json"
+            }
+        },
+        "components": {
+            "description": "This Asset's sub-components (if any)",
+            "type": "array",
+            "default": [],
+            "items": {
+                "$ref": "abb.eam.component-1.0.0.json"
+            }
+        },
+        "features": {
+            "description": "This Asset's features (if any)",
+            "type": "array",
+            "default": [],
+            "items": {
+                "$ref": "abb.eam.feature-1.0.0.json"
+            }
+        }
+    },
+    "required": [
+        "assetId",
+        "assetDescription",
+        "assetStatus",
+        "industryData",
+        "customData"
+    ],
+    "additionalProperties": false
+}

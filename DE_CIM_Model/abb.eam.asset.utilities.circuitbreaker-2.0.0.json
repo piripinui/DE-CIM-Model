@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "abb.eam.asset.utilities.circuitbreaker-2.0.0.json",
+  "title": "Circuit Breaker Model",
+  "description": "A specific model for Circuit Breakers that derives from the generic Asset model. It extends the generic model by enforcing a particular shape of the first object in the industry attributes array. That object contains all the specific attributes for a Circuit Breaker.",
+
+  "allOf": [
+    { "$ref": "abb.eam.asset-2.0.0.json" },
+    { "properties": {
+        "industryData": {
+           "properties": {
+             "attributes": {
+                "type": "array",           
+                "items": [
+                  { "$ref": "abb.eam.asset.utilities.circuitbreaker.industryattribute.all-1.0.0.json" }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}
