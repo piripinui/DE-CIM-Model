@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "abb.eam.component-1.0.0.json",
-  "title": "Component Model",
+  "title": "Generic Component Model",
   "description": "The generic model of a Component",
 
   "$comment": "Below is the definition of component itself.",
