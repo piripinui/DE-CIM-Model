@@ -1,4 +1,5 @@
 {
+  "schema": "abb.eam.asset.utilities.circuitbreaker-2.0.0.json",
   "assetId": "DE-CB218746283746238",
   "assetDescription": "Circuit Breaker in Big Substation",
   "assetStatus": "Installed",

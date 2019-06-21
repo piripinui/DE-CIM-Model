@@ -33,7 +33,7 @@ sections = [
       {
         name: 'schema',
         typeLabel: '{underline schemaname}',
-        description: 'The name of schema to validate the instance file against.'
+        description: 'The name of schema to validate the instance file against (optional).'
       },
       {
         name: 'help',
@@ -113,15 +113,22 @@ function checkJSONDocument(fileName) {
     }
     else {
       var doc = JSON.parse(data);
-      var modelName = options.schema;
-      console.log("Loaded JSON document " + fileName + ", validating against model " + modelName + "...");
-      var targetSchema = schemas[modelName];
+      
+      var modelName = ((options.schema) ? options.schema : doc["schema"]);
 
-      if (typeof targetSchema != "undefined") {
-        console.log(validator.validate(doc, targetSchema));
-      }
-      else {
-        console.log("There is no such schema found called " + modelName);
+      if (modelName) {
+        console.log("Loaded JSON document " + fileName + ", validating against model " + modelName + "...");
+        var targetSchema = schemas[modelName];
+
+        if (typeof targetSchema != "undefined") {
+          console.log(validator.validate(doc, targetSchema));
+        }
+        else {
+          console.log("There is no such schema found called " + modelName);
+        }
+      } else {
+        console.log("Schema has to be defined in either data or as input to validator");
+        console.log(usage);
       }
     }
   })
@@ -132,7 +139,7 @@ function init() {
     console.log(usage);
   }
   else {
-    if (options.schemadir && options.instancefile && options.schema) {
+    if (options.schemadir && options.instancefile) {
       var promise = new Promise(function(resolve, reject) {
         loadCIMSchema(options.schemadir, resolve, reject);
       });

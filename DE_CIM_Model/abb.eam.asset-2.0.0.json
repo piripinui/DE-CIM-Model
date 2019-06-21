@@ -6,6 +6,10 @@
     "description": "The generic description of an Asset",
 
     "properties": {
+        "schema": {
+            "type": "string"
+        },
+
         "assetId": {
             "$ref": "abb.eam.asset.identity-1.0.0.json"
         },
