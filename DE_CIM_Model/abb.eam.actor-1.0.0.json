@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "abb.eam.actor-1.0.0.json",
+  "title": "Generic Actor Model",
+  "description": "A representation of an actor",
+
+  "$comment": "The model definition for an actor",
+
+  "type": "object",
+  "properties": {
+    "schema": {
+      "type": "string"
+    },
+
+    "actorId": {
+      "type": "string"
+    },
+
+    "name": {
+      "type": "string"
+    },
+
+    "actor": {
+      "oneOf": [
+        { "$ref": "abb.eam.actor.individual-1.0.0.json" },
+        { "$ref": "abb.eam.actor.organisation-1.0.0.json" }
+      ]
+    }
+  },
+  "required": [
+    "actorId", "name", "actor"
+  ],
+  "additionalProperties": false
+}

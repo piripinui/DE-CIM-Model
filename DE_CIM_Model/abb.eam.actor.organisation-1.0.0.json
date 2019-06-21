@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "abb.eam.actor.organisation-1.0.0.json",
+  "title": "Generic Actor Organisation Model",
+  "description": "A representation of an actor organisation",
+
+  "$comment": "The model definition for an actor organisation",
+
+  "type": "object",
+  "properties": {
+    "organisationName": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "organisationName"
+  ],
+  "additionalProperties": false
+}

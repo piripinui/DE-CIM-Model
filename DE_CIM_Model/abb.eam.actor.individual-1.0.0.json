@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "abb.eam.actor.individual-1.0.0.json",
+  "title": "Generic Actor Individual Model",
+  "description": "A representation of an actor individual",
+
+  "$comment": "The model definition for an actor individual",
+
+  "type": "object",
+  "properties": {
+    "email": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "email"
+  ],
+  "additionalProperties": false
+}

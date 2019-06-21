@@ -1,0 +1,8 @@
+{
+  "schema": "abb.eam.actor-1.0.0.json",
+  "actorId": "actor-002",
+  "name": "Main Company",
+  "actor": {
+    "organisationName": "ABB"
+  }
+}

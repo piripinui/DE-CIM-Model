@@ -1,0 +1,5 @@
+{
+  "schema": "abb.eam.actor-1.0.0.json",
+  "actorId": "actor-003",
+  "name": "FooBar - no sub actor part, fail"  
+}
