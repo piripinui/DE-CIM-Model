@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "abb.eam.location-1.0.0.json",
-  "title": "Location Model",
+  "title": "Generic Location Model",
   "description": "A representation of a point location as a coordinate pair",
 
   "$comment": "The model definition for point locations in the EAM space. Modelled after GeoJSON Point geometry.",

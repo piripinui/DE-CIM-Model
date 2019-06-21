@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
     "$id": "abb.eam.asset.industryattribute-1.0.0.json",
-    "title": "Asset Industry Attribute Model",
+    "title": "Generic Asset Industry Attribute Model",
     "description": "A set of attributes for Assets that describe specific properties of a real asset used in given industries e.g. transformers, bueses etc",
     "$comment": "The generic definition of an industry attribute is just a JSON object. The structure of that object can be anything you like. Note that for specific industry asset classes a schema definition for the structure of the industry asset(s) may be defined.",
     "type": "object"

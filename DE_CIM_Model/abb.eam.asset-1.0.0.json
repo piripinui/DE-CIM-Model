@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "$id": "abb.eam.asset-1.0.0.json",
     "type": "object",
-    "title": "Asset Model",
+    "title": "Generic Asset Model",
     "description": "The generic description of an Asset",
 
     "properties": {
