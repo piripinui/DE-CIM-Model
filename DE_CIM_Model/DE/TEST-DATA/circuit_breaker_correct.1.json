@@ -1,0 +1,25 @@
+{
+  "assetId": "DE-CB218746283746238",
+  "assetDescription": "Circuit Breaker in Big Substation",
+  "assetStatus": "Installed",
+  "solutionAttributes": [
+
+    {
+      "name": "manufacturer",
+      "value": "ABB" 
+    },
+
+    {
+      "name": "installationDate",
+      "value": "01/01/99"
+    },
+
+    {
+      "name": "foo",
+      "value": "1234",
+      "category": "foobar",
+      "datatype": "number"
+    }
+
+  ]
+}

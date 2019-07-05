@@ -1,0 +1,104 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "de.location-1.0.0.json",
+  "title": "Location Model",
+  "description": "A model representing the DE Location",
+
+  "type": "object",
+  "properties": {
+
+    "locationId": { 
+      "type": "string"
+    },
+
+    "geometry": {
+      "type": "object",
+      "$comment": "Location specified as a point or line",
+      "properties": {
+        "type": {
+          "enum": [
+            "Point", "Line"
+          ],
+          "default": "Point"
+        },
+        "startPoint": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "endPoint": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "required": ["type", "startPoint"],
+      "additionalProperties": false
+    },
+
+    "address": {
+      "type": "object",
+      "$comment": "Location specified as a street/postal address",
+      "properties": { 
+        "country": {
+          "type": "string",
+          "maxLength": 50
+        },
+        "postcode": {
+          "type": "string",
+          "maxLength": 10
+        },
+        "state": {
+          "type": "string",
+          "maxLength": 50
+        },
+        "city": {
+          "type": "string",
+          "maxLength": 50
+        },
+        "addressLine1": {
+          "type": "string",
+          "maxLength": 100
+        },
+        "addressLine2": {
+          "type": "string",
+          "maxLength": 100
+        }
+      }
+    },
+
+    "userDefined": {
+      "$comment": "Location specified as any user defined text",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minItems": 1
+      }
+    },
+
+    "industryAttributes": {
+      "type": "array",
+      "default": [],
+      "items": {
+          "$ref": "de.extendedattributes-1.0.0.json"
+      }
+    },
+
+    "customerAttributes": {
+      "type": "array",
+      "default": [],
+      "items": {
+          "$ref": "de.extendedattributes-1.0.0.json"
+      }
+    }
+
+  },
+  "required": ["locationId"],
+  "anyOf": [{"required": ["geometry"]},{"required": ["address"]},{"required": ["userDefined"]}]
+}

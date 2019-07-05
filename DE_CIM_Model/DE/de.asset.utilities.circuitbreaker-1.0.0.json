@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "de.utilities.circuitbreaker-1.0.0.json",
+  "title": "Circuit Breaker Model",
+  "description": "A specific model for Circuit Breakers that derives from the generic Asset model. It extends the generic model by enforcing a particular shape of the first object in the industry attributes array. That object contains all the specific attributes for a Circuit Breaker.",
+
+  "allOf": [
+    { "$ref": "de.asset-1.0.0.json" },
+    { "properties": {
+        "solutionAttributes": {
+          "$ref": "de.asset.utilities.circuitbreaker.extendedattributes.solution-1.0.0.json"          
+        }
+      }
+    }
+  ]
+}

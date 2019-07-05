@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "de.asset.utilities.circuitbreaker.extendedattributes.solution-1.0.0.json",
+  "title": "The model for all solution attributes of a Circuit Breaker",
+  "description": "Defines all solution attributes of a Circuit Breaker in one place",
+
+  "type": "array",
+  "items": [
+    {
+      "properties": {
+        "name": {"type": "string","enum": ["manufacturer"]},
+        "value": {"type": "string", "maxLength": 10},
+        "category": {"type": "string"},
+        "dataType": {"type": "string", "default": "string"}
+      }, "required": ["name", "value"]
+    },
+    {
+      "properties": {
+        "name": {"type": "string","enum": ["installationDate"]},
+        "value": {"type": "string"},
+        "category": {"type": "string"},
+        "dataType": {"type": "string", "default": "string"}
+      }, "required": ["name", "value"]
+    }
+  ]  
+}

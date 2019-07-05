@@ -1,0 +1,79 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "de.asset-1.0.0.json",
+    "type": "object",
+    "title": "Generic Asset Model",
+    "description": "The generic description of an Asset",
+
+    "properties": {
+
+        "assetId": {
+            "$ref": "de.asset.identity-1.0.0.json"
+        },
+
+        "parentAssetId": {
+            "description": "This Asset's parent Asset (if any)",
+            "type": "string"
+        },
+
+        "assetDescription": {
+            "description": "An informal description of the Asset",
+            "type": "string",
+            "maxLength": 100
+        },
+
+        "assetStatus": {
+            "$ref": "de.asset.statustypes-1.0.0.json"
+        },
+
+        "assetCriticality": {
+            "$ref": "de.asset.criticalitytypes-1.0.0.json"
+        },
+
+        "location": {
+            "$ref": "de.location-1.0.0.json"
+        },
+
+        "components": {
+            "description": "This Asset's components (if any)",
+            "type": "array",
+            "default": [],
+            "items": {
+                "$ref": "de.component-1.0.0.json"
+            }
+        },
+
+        "features": {
+            "description": "This Asset's features (if any)",
+            "type": "array",
+            "default": [],
+            "items": {
+                "$ref": "de.feature-1.0.0.json"
+            }
+        },
+
+        "solutionAttributes": {
+          "description": "A set of additional attributes associated with a specific asset class used in a given industry e.g. transformers, buses etc",
+          "type": "array",
+          "default": [],
+          "items": {
+              "$ref": "de.extendedattributes-1.0.0.json"
+          }
+        },
+
+        "customAttributes": {
+            "description": "A set of additional attributes associated with the Asset",
+            "type": "array",
+            "default": [],
+            "items": {
+                "$ref": "de.extendedattributes-1.0.0.json"
+            }
+        }
+    },
+    "required": [
+        "assetId",
+        "assetDescription",
+        "assetStatus"
+    ],
+    "additionalProperties": false
+}

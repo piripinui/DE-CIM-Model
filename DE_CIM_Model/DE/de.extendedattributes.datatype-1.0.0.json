@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "de.secondaryattribute.datatype-1.0.0.json",
+    "title": "Attribute Types Model",
+    "description": "A set of valid status types for Assets",
+
+    "type": "string",
+    "enum": [
+        "String",
+        "Date",
+        "Object"
+    ]
+}

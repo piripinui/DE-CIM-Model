@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "de.component-1.0.0.json",
+  "title": "Generic Component Model",
+  "description": "The generic model of a Component",
+
+  "$comment": "Below is the definition of component itself.",
+
+  "type": "object",
+  "properties": {
+    "componentId": {
+      "type": "string",
+      "description": "The unique identifier for a Component"
+    },
+
+    "componentDescription": {
+      "type": "string",
+      "description": "An information description of the Component"
+    },
+
+    "parentAssetId": {
+      "type": "string",
+      "description": "The identifier of the Asset that is the parent of this Component (Component must have Asset parents)"
+    },
+
+    "components": {
+      "type": "array",
+      "items": { "$ref": "de.component-1.0.0.json" },
+      "default": [],
+      "description": "The set of Components that are sub-components of this Component"
+    },
+
+    "solutionAttributes": {
+      "description": "A set of additional attributes associated with a specific asset class used in a given industry e.g. transformers, buses etc",
+      "type": "array",
+      "default": [],
+      "items": {
+          "$ref": "de.extendedattributes-1.0.0.json"
+      }
+    },
+
+    "customAttributes": {
+        "description": "A set of additional attributes associated with the Asset",
+        "type": "array",
+        "default": [],
+        "items": {
+            "$ref": "de.extendedattributes-1.0.0.json"
+        }
+    }
+
+  },
+
+  "required": [
+    "componentId", "componentDescription", "parentAssetId"
+  ],
+
+  "additionalProperties": false
+}
