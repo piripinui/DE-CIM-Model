@@ -6,8 +6,8 @@
 
     "type": "string",
     "enum": [
-        "String",
-        "Date",
-        "Object"
+        "string",
+        "date",
+        "location"
     ]
 }

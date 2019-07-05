@@ -15,10 +15,16 @@
     },
 
     {
+      "name": "installationLocation",
+      "value": "DF_location_id_123434567",
+      "dataType": "location"
+    },
+
+    {
       "name": "foo",
       "value": "1234",
       "category": "foobar",
-      "datatype": "number"
+      "dataType": "string"
     }
 
   ]

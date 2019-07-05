@@ -21,6 +21,14 @@
         "category": {"type": "string"},
         "dataType": {"type": "string", "default": "string"}
       }, "required": ["name", "value"]
+    },
+    {
+      "properties": {
+        "name": {"type": "string","enum": ["installationLocation"]},
+        "value": {"type": "string"},
+        "category": {"type": "string"},
+        "dataType": {"type": "string", "default": "string"}
+      }, "required": ["name", "value"]
     }
   ]  
 }
